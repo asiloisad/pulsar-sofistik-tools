@@ -1,5 +1,9 @@
 'atom-text-editor[data-grammar="source sofi"]':
   'f5':'SOFiSTiK-atom:calculation-WPS'
-  'f6':'SOFiSTiK-atom:calculation-WPS-immediately'
-  'f7':'SOFiSTiK-atom:calculation-SPS'
-  'f8':'SOFiSTiK-atom:open-report'
+  'ctrl+f6':'SOFiSTiK-atom:calculation-WPS-immediately'
+  'alt+f6':'SOFiSTiK-atom:calculation-SPS'
+  'f6':'SOFiSTiK-atom:open-or-create-file-SOFiPLUS'
+  'f7':'SOFiSTiK-atom:open-Animator'
+  'f8':'SOFiSTiK-atom:open-WinGRAF'
+  'ctrl+f8':'SOFiSTiK-atom:open-Result-Viewer'
+  'f9':'SOFiSTiK-atom:open-report'
