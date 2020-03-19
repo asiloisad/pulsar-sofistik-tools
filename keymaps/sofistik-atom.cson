@@ -1,0 +1,5 @@
+'atom-text-editor[data-grammar="source sofi"]':
+  'f5':'sofistik-atom:calculation-WPS'
+  'f6':'sofistik-atom:calculation-WPS-immediately'
+  'f7':'sofistik-atom:calculation-SPS'
+  'f8':'sofistik-atom:open-report'
