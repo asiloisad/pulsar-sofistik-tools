@@ -1,0 +1,17 @@
+{
+  "name": "sofistik-atom",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "General sofistik package for Atom IDE",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "keywords": [
+    "sofistik",
+    "bacadra"
+  ],
+  "readmeFilename": "README.md",
+  "homepage"  : "https://github.com/bacadra/sofistik-atom",
+  "url"       : "https://github.com/bacadra/sofistik-atom",
+  "repository": "https://github.com/bacadra/sofistik-atom"
+}
