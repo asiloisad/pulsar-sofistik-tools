@@ -2,13 +2,14 @@
   "name": "sofistik-atom",
   "main": "./lib/main",
   "version": "0.1.6",
-  "description": "SOFiSTiK tools for Atom IDE",
+  "description": "A set of tools for cooperation with the SOFiSTiK software for Atom IDE",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "keywords": [
+    "bacadra",
     "SOFiSTiK",
-    "bacadra"
+    "tools"
   ],
   "readmeFilename": "README.md",
   "homepage": "https://github.com/bacadra/sofistik-atom",
