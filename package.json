@@ -2,12 +2,12 @@
   "name": "sofistik-atom",
   "main": "./lib/main",
   "version": "0.1.5",
-  "description": "General sofistik package for Atom IDE",
+  "description": "SOFiSTiK tools for Atom IDE",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "keywords": [
-    "sofistik",
+    "SOFiSTiK",
     "bacadra"
   ],
   "readmeFilename": "README.md",

@@ -1,6 +1,6 @@
 # sofistik-atom
 
-Pack of methods to co-work with SOFiSTiK environment.
+A set of tools for cooperation with the SOFiSTiK software.
 
 ## See another bacadra packages...
 
