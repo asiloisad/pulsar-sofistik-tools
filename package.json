@@ -1,7 +1,7 @@
 {
   "name": "sofistik-atom",
   "main": "./lib/main",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A set of tools for cooperation with the SOFiSTiK software for Atom IDE",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
