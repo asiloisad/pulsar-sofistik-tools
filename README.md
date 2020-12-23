@@ -2,12 +2,13 @@
 
 A set of tools for cooperation with the SOFiSTiK software.
 
-## See another bacadra packages...
+## See my another packages...
 
 * [bacadra-atom](https://github.com/bacadra/bacadra-atom)
 * [bib-finder](https://github.com/bacadra/bib-finder)
 * [fold-section](https://github.com/bacadra/fold-section)
 * [hydrogen-run](https://github.com/bacadra/hydrogen-run)
+* [image-paste](https://github.com/bacadra/image-paste)
 * [language-bacadra](https://github.com/bacadra/language-bacadra)
 * [language-sofistik](https://github.com/bacadra/language-sofistik)
 * [navigation-pane](https://github.com/bacadra/navigation-pane)
