@@ -2,7 +2,7 @@
 
 A set of tools for cooperation with the SOFiSTiK software.
 
-## See my another packages...
+# See also
 
 * [bacadra-atom](https://github.com/bacadra/bacadra-atom)
 * [bib-finder](https://github.com/bacadra/bib-finder)
