@@ -1,5 +1,5 @@
 {
-  "name": "sofistik-atom",
+  "name": "sofistik-tools",
   "main": "./lib/main",
   "version": "0.1.9",
   "description": "A set of tools for cooperation with the SOFiSTiK software for Atom IDE",
@@ -12,7 +12,7 @@
     "tools"
   ],
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/bacadra/sofistik-atom",
-  "url": "https://github.com/bacadra/sofistik-atom",
-  "repository": "https://github.com/bacadra/sofistik-atom"
+  "homepage": "https://github.com/bacadra/sofistik-tools",
+  "url": "https://github.com/bacadra/sofistik-tools",
+  "repository": "https://github.com/bacadra/sofistik-tools"
 }
