@@ -7,3 +7,6 @@
   'f8':'sofistik-tools:open-WinGRAF'
   'ctrl+f8':'sofistik-tools:open-Result-Viewer'
   'f9':'sofistik-tools:open-report'
+
+'.sofistik-help atom-text-editor[mini]':
+  'alt-enter': 'sofistik-help:alt-select'
