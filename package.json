@@ -20,5 +20,6 @@
     "etch": "^0.14.1",
     "fuzzaldrin": "^2.1.0",
     "fuzzaldrin-plus": "^0.6.0"
-  }
+  },
+  "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
 }
