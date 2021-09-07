@@ -14,5 +14,11 @@
   "readmeFilename": "README.md",
   "homepage": "https://github.com/bacadra/atom-sofistik-tools",
   "url": "https://github.com/bacadra/atom-sofistik-tools",
-  "repository": "https://github.com/bacadra/atom-sofistik-tools"
+  "repository": "https://github.com/bacadra/atom-sofistik-tools",
+  "dependencies": {
+    "atom-select-list": "^0.8.1",
+    "etch": "^0.14.1",
+    "fuzzaldrin": "^2.1.0",
+    "fuzzaldrin-plus": "^0.6.0"
+  }
 }
