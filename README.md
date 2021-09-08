@@ -2,7 +2,7 @@
 
 A set of tools for cooperation with the SOFiSTiK software.
 
-It best to use it with atom package [SOFiSTiK-language](https://atom.io/packages/sofistik-language) which provide syntax and gramma settings.
+It best to use it with atom package [language-sofistik](https://atom.io/packages/language-sofistik) which provide syntax and gramma settings.
 
 
 ## Configuration
