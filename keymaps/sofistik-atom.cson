@@ -1,12 +1,13 @@
 'atom-text-editor[data-grammar="source sofistik"]':
-  'f5':'sofistik-tools:calculation-WPS'
-  'ctrl+f6':'sofistik-tools:calculation-WPS-immediately'
-  'alt+f6':'sofistik-tools:calculation-SPS'
-  'f6':'sofistik-tools:open-or-create-file-SOFiPLUS'
-  'f7':'sofistik-tools:open-Animator'
-  'f8':'sofistik-tools:open-WinGRAF'
-  'ctrl+f8':'sofistik-tools:open-Result-Viewer'
-  'f9':'sofistik-tools:open-report'
+  'f5'       : 'SOFiSTiK-tools:calculation-WPS'
+  'ctrl-f5'  : 'SOFiSTiK-tools:calculation-WPS-immediately'
+  'shift-f5' : 'SOFiSTiK-tools:calculation-WPS-immediately-current-prog'
+  'alt-f5'   : 'SOFiSTiK-tools:calculation-SPS'
+  'f6'       : 'SOFiSTiK-tools:open-or-create-file-SOFiPLUS'
+  'f7'       : 'SOFiSTiK-tools:open-Animator'
+  'f8'       : 'SOFiSTiK-tools:open-WinGRAF'
+  'ctrl-f8'  : 'SOFiSTiK-tools:open-Result-Viewer'
+  'f9'       : 'SOFiSTiK-tools:open-report'
 
 '.sofistik-help atom-text-editor[mini]':
-  'alt-enter': 'sofistik-help:alt-select'
+  'alt-enter': 'SOFiSTiK-help:alt-select'
