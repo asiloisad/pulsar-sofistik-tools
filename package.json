@@ -1,7 +1,7 @@
 {
   "name": "sofistik-tools",
   "main": "./lib/main",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "A set of tools for cooperation with the SOFiSTiK software",
   "engines": {
     "atom": ">=1.56.0 <2.0.0"
@@ -24,7 +24,7 @@
   "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007",
   "package-deps": [
     {
-        "name": "language-sofistik"
+      "name": "language-sofistik"
     }
   ]
 }
