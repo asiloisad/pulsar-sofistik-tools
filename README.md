@@ -10,9 +10,9 @@ It best to use it with atom package [language-sofistik](https://atom.io/packages
 The most important part is to correctly set the software installation path and the SOFiSTiK version. You can do it in package settings.
 
 
-## Tools available in `.dat` file
+## Tools available in `source.sofistik` (e.g. `.dat` file)
 
-The tools listed below should be called up via the Command Palette as `sofistik-tools:...`
+The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
 
 | Tool | Description |
 |-|-|
@@ -53,9 +53,9 @@ The tools listed below should be called up via the Command Palette as `sofistik-
 | `PROG-below-OFF` | turn off programs below cursor |
 
 
-## Tools available in workspace
+## Tools available in `atom-workspace`
 
-The tools listed below should be called up via the Command Palette as `sofistik-tools:...`
+The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
 
 | Tool | Description |
 |-|-|
@@ -63,3 +63,17 @@ The tools listed below should be called up via the Command Palette as `sofistik-
 | `IFC-export` | open IFC export window |
 | `IFC-import` | open IFC import window |
 | `open-CDBASE.CHM` | open database description externally; any `.chm` browser must be available in system |
+
+
+## Tools available in `.tree-view`
+
+The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
+
+| Tool | Description |
+|-|-|
+| `clean-[S]-[ERG-PRT-LST-PL-$??-#??-GRB]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-PL-$??-#??-GRB]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files recursively from selected paths |
