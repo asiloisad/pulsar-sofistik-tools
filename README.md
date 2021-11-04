@@ -22,7 +22,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `calculation-WPS-2020` | force to use WPS from SOFiSTiK 2020 |
 | `calculation-WPS-2018` | force to use WPS from SOFiSTiK 2020 |
 | `open-report` | open `.plb` file with ReportViewer, only if `.plb` available |
-| `open-report-automatic-refresh` | open `.plb` file with ReportViewer with flag to autoamticly refresh file if changed, only if `.plb` available |
+| `open-report-automatic-refresh` | open `.plb` file with ReportViewer with flag to automatically refresh file if changed, only if `.plb` available |
 | `save-report-as-PDF` | convert `.plb` to `.pdf` |
 | `save-pictures-as-PDF` | export images from `.plb` |
 | `open-protocol` | open protocol (text file) |
