@@ -71,9 +71,9 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| `clean-[S]-[ERG-PRT-LST-PL-$??-#??-GRB]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-PL-$??-#??-GRB]` | delete files recursively from selected paths |
-| `clean-[S]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
-| `clean-[S]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files recursively from selected paths |
