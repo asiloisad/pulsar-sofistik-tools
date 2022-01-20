@@ -9,6 +9,8 @@ It best to use it with atom package [language-sofistik](https://atom.io/packages
 
 The most important part is to correctly set the software installation path and the SOFiSTiK version. You can do it in package settings.
 
+THe pacakge support custom shebang (first line of file) as `/^! SOFiSTiK (\d{4})(-\d\d?)?$/`, e.g. `! SOFiSTiK 2022`, `! SOFiSTiK 2018`, `! SOFiSTiK 2018-12`.
+
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
