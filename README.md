@@ -18,6 +18,8 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
+| `current-help` | open PDF help for current module in default atom pdf-viewer. if `pdf-viwer` package is installed, then you can activate `Scroll to keyword in help documents` in package options |
+| `current-help-externally` | same as `current-help`, but in externally pdf-viewer |
 | `calculation-WPS` | open Window Parser with loaded `.dat` file |
 | `calculation-WPS-immediately` | run calculation of file in WPS |
 | `calculation-SPS-immediately` | run calculation of file in SPS |
