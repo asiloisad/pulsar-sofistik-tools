@@ -29,10 +29,5 @@
       }
     }
   },
-  "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007",
-  "package-deps": [
-    {
-      "name": "language-sofistik"
-    }
-  ]
+  "license": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007"
 }
