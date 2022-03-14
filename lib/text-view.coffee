@@ -8,7 +8,8 @@ class TextView
     @disposables = new CompositeDisposable()
 
     @element = document.createElement('div')
-    @element.classList.add('tree-view-dialog')
+    @element.classList.add('dialog')
+    @element.classList.add('text-view-dialog')
 
     @promptText = document.createElement('label')
     @promptText.classList.add('icon')
