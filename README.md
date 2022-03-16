@@ -1,6 +1,6 @@
 # sofistik-tools
 
-**Support versions of SOFiSTiK are 2022, 2020 and 2018.**
+**Support versions of SOFiSTiK are 2022, 2020 and 2018.** As the package supports many versions of SOFiSTiK and commands are constantly changing, the package offers hints that may no longer be valid in a given version.
 
 A set of tools for cooperation with the SOFiSTiK software.
 
@@ -24,7 +24,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| `current-help` | open help for current module in Atom. if `pdf-viewer` package is installed, then you can activate `Scroll to keyword in help documents [experimental]` in package options for better positioning |
+| `current-help` | open help for current module in Atom |
 | `current-help-externally` | same as `current-help`, but in externally PDF viewer |
 | `calculation-WPS` | open WPS with loaded `.dat` file |
 | `calculation-WPS-immediately` | run calculation of file in WPS |
