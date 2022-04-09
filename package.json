@@ -28,5 +28,61 @@
       }
     }
   },
+  "activationCommands": {
+    "atom-text-editor[data-grammar=\"source sofistik\"]": [
+      "SOFiSTiK-tools:current-help",
+      "SOFiSTiK-tools:current-help-externally",
+      "SOFiSTiK-tools:calculation-WPS",
+      "SOFiSTiK-tools:calculation-WPS-immediately",
+      "SOFiSTiK-tools:calculation-WPS-immediately-current-prog",
+      "SOFiSTiK-tools:calculation-SPS-immediately",
+      "SOFiSTiK-tools:open-report",
+      "SOFiSTiK-tools:open-report-automatic-refresh",
+      "SOFiSTiK-tools:save-report-as-PDF",
+      "SOFiSTiK-tools:save-pictures-as-PDF",
+      "SOFiSTiK-tools:open-protocol",
+      "SOFiSTiK-tools:open-Animator",
+      "SOFiSTiK-tools:open-SSD",
+      "SOFiSTiK-tools:open-WinGRAF",
+      "SOFiSTiK-tools:open-Result-Viewer",
+      "SOFiSTiK-tools:open-Teddy",
+      "SOFiSTiK-tools:open-Teddy-1",
+      "SOFiSTiK-tools:open-Teddy-2",
+      "SOFiSTiK-tools:open-Teddy-3",
+      "SOFiSTiK-tools:open-Teddy-4",
+      "SOFiSTiK-tools:open-or-create-file-SOFiPLUS",
+      "SOFiSTiK-tools:open-file-SOFiPLUS",
+      "SOFiSTiK-tools:create-file-SOFiPLUS",
+      "SOFiSTiK-tools:export-CDB-to-DAT",
+      "SOFiSTiK-tools:export-PLB-to-DOCX",
+      "SOFiSTiK-tools:PROG-current-toggle",
+      "SOFiSTiK-tools:PROG-all-toggle",
+      "SOFiSTiK-tools:PROG-all-ON",
+      "SOFiSTiK-tools:PROG-all-OFF",
+      "SOFiSTiK-tools:PROG-above-toggle",
+      "SOFiSTiK-tools:PROG-above-ON",
+      "SOFiSTiK-tools:PROG-above-OFF",
+      "SOFiSTiK-tools:PROG-below-toggle",
+      "SOFiSTiK-tools:PROG-below-ON",
+      "SOFiSTiK-tools:PROG-below-OFF"
+    ],
+    "atom-workspace": [
+      "SOFiSTiK-tools:IFC-export",
+      "SOFiSTiK-tools:IFC-import",
+      "SOFiSTiK-tools:open-CDBASE.CHM"
+    ],
+    ".tree-view": [
+      "SOFiSTiK-tools:clean-by-glob-pattern",
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]",
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]",
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]",
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]"
+    ]
+
+  },
   "license": "GPL-3.0-or-later"
 }
