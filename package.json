@@ -1,7 +1,7 @@
 {
   "name": "sofistik-tools",
   "main": "./lib/main",
-  "version": "0.1.38",
+  "version": "0.1.39",
   "description": "A set of tools for cooperation with the SOFiSTiK software",
   "engines": {
     "atom": ">=1.56.0 <2.0.0"
@@ -82,7 +82,6 @@
       "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]",
       "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]"
     ]
-
   },
   "license": "GPL-3.0-or-later"
 }
