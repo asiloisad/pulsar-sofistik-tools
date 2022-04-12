@@ -11,5 +11,5 @@
   'f9'       : 'SOFiSTiK-tools:open-report'
 
 '.sofistik-tools.sofistik-help atom-text-editor[mini]':
-  'enter'    : 'project-list:open-in'
-  'alt-enter': 'project-list:open-ex'
+  'enter'    : 'SOFiSTiK-help:open-in'
+  'alt-enter': 'SOFiSTiK-help:open-ex'
