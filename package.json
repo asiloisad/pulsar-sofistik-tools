@@ -70,7 +70,10 @@
     "atom-workspace": [
       "SOFiSTiK-tools:IFC-export",
       "SOFiSTiK-tools:IFC-import",
-      "SOFiSTiK-tools:open-CDBASE.CHM"
+      "SOFiSTiK-tools:open-CDBASE.CHM",
+      "SOFiSTiK-tools:toggle-help",
+      "SOFiSTiK-tools:recache-help",
+      "SOFiSTiK-tools:change-version"
     ],
     ".tree-view": [
       "SOFiSTiK-tools:clean-by-glob-pattern",
