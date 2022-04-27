@@ -8,15 +8,13 @@ It best to use it with:
 * [language-sofistik](https://atom.io/packages/language-sofistik): provide syntax and gramma settings,
 * [autocomplete-sofistik](https://atom.io/packages/autocomplete-sofistik): autocomplete input,
 * [pdf-viewer](https://atom.io/packages/pdf-viewer): PDF viewer with go-to-key possibility,
-* [navigation-pane](https://atom.io/packages/navigation-pane): document outline.
-
+* [navigation-panel](https://atom.io/packages/navigation-panel): document outline.
 
 ## Configuration
 
 The most important part is to correctly set the software installation path and the SOFiSTiK version. You can do it in package settings.
 
 The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SOFiSTiK 2022`, `@ SOFiSTiK 2018`, `@ SOFiSTiK 2018-12`. This overwrite global package settings.
-
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
@@ -60,19 +58,17 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `PROG-below-ON` | turn ON programs below cursor |
 | `PROG-below-OFF` | turn OFF programs below cursor |
 
-
 ## Tools available in `atom-workspace`
 
 The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
 
 | Tool | Description |
 |-|-|
-| `open-help` | open window to choose help document; press `enter` to open help inside atom or `alt-enter` to open externally; open inside atom is possible only with any PDF viewer package, e.g. [pdf-viewer](https://atom.io/packages/pdf-viewer) |
+| `open-help` | open window to choose help document; press `Enter` to open help inside atom or `Alt-Enter` to open externally; open inside atom is possible only with any PDF viewer package, e.g. [pdf-viewer](https://atom.io/packages/pdf-viewer) |
 | `IFC-export` | open IFC export window |
 | `IFC-import` | open IFC import window |
 | `change-version` | change globally version of SOFiSTiK program without menu |
 | `open-CDBASE.CHM` | open database description externally; `.chm` browser must be available in system |
-
 
 ## Tools available in `.tree-view`
 
@@ -80,9 +76,9 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| `clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]` | delete files recursively from selected paths |
-| `clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
-| `clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files recursively from selected paths |
