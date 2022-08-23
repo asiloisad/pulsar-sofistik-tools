@@ -1,14 +1,20 @@
 # sofistik-tools
 
-**Support versions of SOFiSTiK are 2022, 2020 and 2018.** As the package supports many versions of SOFiSTiK and commands are constantly changing, the package offers hints that may no longer be valid in a given version.
-
 A set of tools for cooperation with the SOFiSTiK software.
 
-It best to use it with:
-* [language-sofistik](https://atom.io/packages/language-sofistik): provide syntax and gramma settings,
-* [autocomplete-sofistik](https://atom.io/packages/autocomplete-sofistik): autocomplete input,
-* [pdf-viewer](https://atom.io/packages/pdf-viewer): PDF viewer with go-to-key possibility,
-* [navigation-panel](https://atom.io/packages/navigation-panel): document outline.
+## Installation
+
+After the announcement of Atoms sunset, the official [Atom packages store](https://atom.io/packages) isn't respond properly, so latest version of this package cannot be downloaded there. To get latest version run the shell command
+
+    apm install bacadra/atom-sofistik-tools
+
+and obtain the package directly from Github repository. Please note that package will occur in `Settings/Packages/Git Packages` instead of `Community Packages`.
+
+## Compatibility
+
+**Support versions of SOFiSTiK are 2022, 2020 and 2018. Only Enligsh.**
+
+As the package supports many versions of SOFiSTiK and commands are constantly changing, the package offers hints that may no longer be valid in a given version.
 
 ## Configuration
 
@@ -18,7 +24,7 @@ The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SO
 
 ## Help view
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://atom.io/packages/pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-free` for multi-pane view. Only English keywords are supported.
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-free` for multi-pane view. Only English keywords are supported.
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
@@ -68,7 +74,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| `open-help` | open window to choose help document; press `Enter` to open help inside atom or `Alt-Enter` to open externally; open inside atom is possible only with any PDF viewer package, e.g. [pdf-viewer](https://atom.io/packages/pdf-viewer) |
+| `open-help` | open window to choose help document; press `Enter` to open help inside atom or `Alt-Enter` to open externally; open inside atom is possible only with any PDF viewer package, e.g. [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) |
 | `IFC-export` | open IFC export window |
 | `IFC-import` | open IFC import window |
 | `change-version` | change globally version of SOFiSTiK program without menu |
@@ -86,3 +92,23 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
 | `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files only in selected paths |
 | `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files recursively from selected paths |
+
+# Contributing
+
+If you have ideas on how to improve the package, see bugs or want to support new features, feel free to share them via GitHub.
+
+See my other packages dedicated to Atom Editor:
+
+* [autocomplete-sofistik](https://github.com/bacadra/atom-autocomplete-sofistik)
+* [bib-finder](https://github.com/bacadra/atom-bib-finder)
+* [hydrogen-run](https://github.com/bacadra/atom-hydrogen-run)
+* [image-paste](https://github.com/bacadra/atom-image-paste)
+* [language-sofistik](https://github.com/bacadra/atom-language-sofistik)
+* [navigation-panel](https://github.com/bacadra/atom-navigation-panel)
+* [open-external](https://github.com/bacadra/atom-open-external)
+* [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer)
+* [project-files](https://github.com/bacadra/atom-project-files)
+* [regex-aligner](https://github.com/bacadra/atom-regex-aligner)
+* [sofistik-tools](https://github.com/bacadra/atom-sofistik-tools)
+* [super-select](https://github.com/bacadra/atom-super-select)
+* [word-map](https://github.com/bacadra/atom-word-map)
