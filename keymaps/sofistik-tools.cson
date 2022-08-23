@@ -4,6 +4,7 @@
   'shift-f5' : 'SOFiSTiK-tools:calculation-WPS-immediately-current-prog'
   'alt-f5'   : 'SOFiSTiK-tools:calculation-SPS'
   'f6'       : 'SOFiSTiK-tools:current-help'
+  'ctrl-f6'  : 'SOFiSTiK-tools:current-help-free'
   'alt-f6'   : 'SOFiSTiK-tools:current-help-externally'
   'f7'       : 'SOFiSTiK-tools:open-Animator'
   'f8'       : 'SOFiSTiK-tools:open-WinGRAF'
