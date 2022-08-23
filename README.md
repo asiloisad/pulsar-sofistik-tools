@@ -16,6 +16,10 @@ The most important part is to correctly set the software installation path and t
 
 The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SOFiSTiK 2022`, `@ SOFiSTiK 2018`, `@ SOFiSTiK 2018-12`. This overwrite global package settings.
 
+## Help view
+
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://atom.io/packages/pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-free` for multi-pane view. Only English keywords are supported.
+
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
 The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
