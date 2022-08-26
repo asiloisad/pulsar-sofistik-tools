@@ -24,7 +24,7 @@ The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SO
 
 ## Help view
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-free` for multi-pane view. Only English keywords are supported.
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-multi` for multi-pane view. Only English keywords are supported.
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 

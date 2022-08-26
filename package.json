@@ -19,6 +19,7 @@
     "atom-select-list": "^0.8.1",
     "etch": "^0.14.1",
     "glob": "^7.2.0",
+    "minimatch": "^5.1.0",
     "zadeh": "^3.0.0-beta.4"
   },
   "consumedServices": {
@@ -31,6 +32,7 @@
   "activationCommands": {
     "atom-text-editor[data-grammar=\"source sofistik\"]": [
       "SOFiSTiK-tools:current-help",
+      "SOFiSTiK-tools:current-help-multi",
       "SOFiSTiK-tools:current-help-externally",
       "SOFiSTiK-tools:calculation-WPS",
       "SOFiSTiK-tools:calculation-WPS-immediately",
@@ -75,14 +77,16 @@
     ],
     ".tree-view": [
       "SOFiSTiK-tools:clean-by-glob-pattern",
-      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]",
-      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB]",
-      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]",
-      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE]",
-      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]",
-      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB]",
-      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]",
-      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]"
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB]",
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]",
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]",
+      "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]",
+      "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG]",
+      "SOFiSTiK-tools:MSCA-Fix-[S]",
+      "SOFiSTiK-tools:MSCA-Fix-[R]"
     ]
   },
   "license": "GPL-3.0-or-later"
