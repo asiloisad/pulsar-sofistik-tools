@@ -400,6 +400,7 @@
     "LC",
     "DBO",
     "FILT",
+    "FLT",
     "JOIN",
     "XLSX",
     "PFA",
@@ -416,7 +417,8 @@
     "NODE",
     "BEAM",
     "QUAD",
-    "BRIC"
+    "BRIC",
+    "RSET"
   ],
   "SHEARWALL": [
     "CTRL",
