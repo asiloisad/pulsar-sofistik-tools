@@ -12,7 +12,7 @@ and obtain the package directly from Github repository. Please note that package
 
 ## Compatibility
 
-**Support versions of SOFiSTiK are 2022, 2020 and 2018. Only Enligsh.**
+**Support versions of SOFiSTiK are 2023, 2022, 2020 and 2018. Only Enligsh.**
 
 As the package supports many versions of SOFiSTiK and commands are constantly changing, the package offers hints that may no longer be valid in a given version.
 
@@ -24,7 +24,7 @@ The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SO
 
 ## Help view
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-multi` for multi-pane view. Only English keywords are supported.
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-free` for multi-pane view. Only English keywords are supported.
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
