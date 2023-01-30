@@ -4,17 +4,21 @@ A set of tools for cooperation with the SOFiSTiK software.
 
 ## Installation
 
-After the announcement of Atoms sunset, the official [Atom packages store](https://atom.io/packages) isn't respond properly, so latest version of this package cannot be downloaded there. To get latest version run the shell command
+The official [Atom packages store](https://atom.io/packages) has been disabled. To get latest version run the shell command
 
     apm install bacadra/atom-sofistik-tools
 
-and obtain the package directly from Github repository. Please note that package will occur in `Settings/Packages/Git Packages` instead of `Community Packages`.
+and obtain the package directly from Github repository.
+
+The package has compability with [Pulsar](https://pulsar-edit.dev/) and can be install
+
+    pulsar -p install bacadra/atom-sofistik-tools
 
 ## Compatibility
 
-**Support versions of SOFiSTiK are 2023, 2022, 2020 and 2018. Only Enligsh.**
+**Support versions of SOFiSTiK are 2023, 2022, 2020 and 2018. English only.**
 
-As the package supports many versions of SOFiSTiK and commands are constantly changing, the package offers hints that may no longer be valid in a given version.
+As the package supports many versions of SOFiSTiK and commands are constantly changing, the package offers hints that may no longer be valid in given version.
 
 ## Configuration
 
@@ -52,9 +56,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `open-Teddy-2` | open `.dat` file externally in Teddy in slot 2 |
 | `open-Teddy-3` | open `.dat` file externally in Teddy in slot 3 |
 | `open-Teddy-4` | open `.dat` file externally in Teddy in slot 4 |
-| `open-or-create-file-SOFiPLUS` | open `.dwg` file in SOFiPLUS with same name as `.dat` file |
-| `open-file-SOFiPLUS` | open `.dwg` file only if exists |
-| `create-file-SOFiPLUS` | create `.dwg` file only if not exists |
+| `open-SOFiPLUS` | open `.dwg` file only if exists else just open program |
 | `export-CDB-to-DAT` | open export window from `.cdb` to `.dat` |
 | `export-PLB-to-DOCX` | convert `.plb` file to `.docx`; work only with SOFiSTiK 2020 or higher versions |
 | `PROG-current-toggle` | toggle state of PROG of current program |
@@ -79,6 +81,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `IFC-import` | open IFC import window |
 | `change-version` | change globally version of SOFiSTiK program without menu |
 | `open-CDBASE.CHM` | open database description externally; `.chm` browser must be available in system |
+| `open-SOFiPLUS` | open program |
 
 ## Tools available in `.tree-view`
 
@@ -95,9 +98,9 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 # Contributing
 
-If you have ideas on how to improve the package, see bugs or want to support new features, feel free to share them via GitHub.
+If you have ideas on how to improve the package, see bugs or want to support new features - feel free to share it via GitHub.
 
-See my other packages dedicated to Atom Editor:
+See my other packages for Atom Editor:
 
 * [autocomplete-sofistik](https://github.com/bacadra/atom-autocomplete-sofistik)
 * [bib-finder](https://github.com/bacadra/atom-bib-finder)
