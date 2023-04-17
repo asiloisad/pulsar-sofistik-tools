@@ -599,7 +599,9 @@
     "CTXT",
     "ECHO"
   ],
-  "TEMPLATE": [],
+  "TEMPLATE": [
+    "ECHO"
+  ],
   "TENDON": [
     "SYSP",
     "CTRL",
@@ -632,7 +634,6 @@
     "LINE",
     "ECHO"
   ],
-  "Sheet1": [],
   "WING": [
     "CTRL",
     "DB",
