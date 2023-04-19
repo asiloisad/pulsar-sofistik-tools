@@ -28,7 +28,7 @@ The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SO
 
 ## Help view
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. You can command `SOFiSTiK-tools:current-help` for single view or `SOFiSTiK-tools:current-help-free` for multi-pane view. Only English keywords are supported.
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword.
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
@@ -36,7 +36,8 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| `current-help` | open help for current module in Atom |
+| `current-help` | open help for current module in Atom in single pane |
+| `current-help-multi` | open help for current module in Atom, but multi panes |
 | `current-help-externally` | same as `current-help`, but in externally PDF viewer |
 | `calculation-WPS` | open WPS with loaded `.dat` file |
 | `calculation-WPS-immediately` | run calculation of file in WPS |
@@ -52,6 +53,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `open-WinGRAF` | open `.gra` file with same name as `.dat` file |
 | `open-Result-Viewer` | open `.result` file with same name as `.dat` file |
 | `open-Teddy` | open `.dat` file externally in Teddy |
+| `open-Teddy-single` | open `.dat` file externally in Teddy |
 | `open-Teddy-1` | open `.dat` file externally in Teddy in slot 1 |
 | `open-Teddy-2` | open `.dat` file externally in Teddy in slot 2 |
 | `open-Teddy-3` | open `.dat` file externally in Teddy in slot 3 |
@@ -76,7 +78,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| `open-help` | open window to choose help document; press `Enter` to open help inside atom or `Alt-Enter` to open externally; open inside atom is possible only with any PDF viewer package, e.g. [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) |
+| `open-help` | open window to choose help document; press `Enter` to open help inside atom or `Alt-Enter` to open externally; open inside atom is possible only with any PDF viewer package |
 | `IFC-export` | open IFC export window |
 | `IFC-import` | open IFC import window |
 | `change-version` | change globally version of SOFiSTiK program without menu |
@@ -93,8 +95,8 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB]` | delete files recursively from selected paths |
 | `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]` | delete files only in selected paths |
 | `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
-| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB]` | delete files recursively from selected paths |
+| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]` | delete files only in selected paths |
+| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]` | delete files recursively from selected paths |
 
 # Contributing
 
