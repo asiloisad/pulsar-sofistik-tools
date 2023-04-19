@@ -15,3 +15,6 @@
 '.sofistik-tools.sofistik-help atom-text-editor[mini]':
   'enter'    : 'SOFiSTiK-help:open-in'
   'alt-enter': 'SOFiSTiK-help:open-ex'
+
+'.sofistik-tools.sofistik-dats atom-text-editor[mini]':
+  'enter'    : 'SOFiSTiK-dats:open'
