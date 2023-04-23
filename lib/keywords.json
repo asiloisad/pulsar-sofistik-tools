@@ -27,6 +27,7 @@
     "CREP",
     "GRP",
     "GRP2",
+    "Q8X8",
     "ELEM",
     "LEN0",
     "HIGH",
@@ -197,6 +198,15 @@
     "SCHN",
     "END"
   ],
+  "CSA": [
+    "TASK",
+    "MCRL",
+    "PHNG",
+    "CPHN",
+    "EXPO",
+    "PLOT",
+    "ECHO"
+  ],
   "CSM": [
     "CTRL",
     "LAUN",
@@ -214,6 +224,7 @@
     "GRPD",
     "LAM",
     "COMB",
+    "GAMT",
     "LCCS",
     "DECS",
     "COPY",
@@ -257,8 +268,10 @@
     "DSEL",
     "DSLC",
     "LC",
+    "GRP",
     "DDEL",
-    "CTRL"
+    "CTRL",
+    "ECHO"
   ],
   "DOLFYN": [
     "FLOW",
@@ -388,6 +401,26 @@
     "OPT",
     "DOCX",
     "IMG"
+  ],
+  "RELY": [
+    "CTRL",
+    "OUTP",
+    "VAR",
+    "CORR",
+    "PROJ",
+    "FUNC",
+    "SLSF",
+    "MC",
+    "IS",
+    "LS",
+    "DS",
+    "ADS",
+    "FORM",
+    "SORM",
+    "MVFO",
+    "SUBS",
+    "EXDS",
+    "RSF"
   ],
   "RESULTS": [
     "CDB",
@@ -603,7 +636,9 @@
     "ECHO"
   ],
   "TENDON": [
+    "GRP",
     "SYSP",
+    "SYSS",
     "CTRL",
     "ECHO",
     "AXES",
@@ -624,7 +659,11 @@
     "COLO",
     "SCHH",
     "PLOT",
-    "AND"
+    "AND",
+    "EXPO",
+    "PAAS",
+    "SLAB",
+    "SLBS"
   ],
   "TEXTILE": [
     "CUTT",
