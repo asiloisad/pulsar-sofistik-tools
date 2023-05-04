@@ -94,7 +94,7 @@
       "SOFiSTiK-tools:MSCA-Fix-[R]"
     ]
   },
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "devDependencies": {
     "@types/glob": "^8.0.0"
   }
