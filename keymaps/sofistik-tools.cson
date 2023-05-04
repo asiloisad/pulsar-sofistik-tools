@@ -1,7 +1,7 @@
 'atom-text-editor[data-grammar="source sofistik"]':
   'f5'       : 'SOFiSTiK-tools:calculation-WPS'
   'ctrl-f5'  : 'SOFiSTiK-tools:calculation-WPS-immediately'
-  'shift-f5' : 'SOFiSTiK-tools:calculation-WPS-immediately-current-prog'
+  'shift-f5' : 'SOFiSTiK-tools:calculation-WPS-current'
   'alt-f5'   : 'SOFiSTiK-tools:calculation-SPS-immediately'
   'f6'       : 'SOFiSTiK-tools:current-help'
   'ctrl-f6'  : 'SOFiSTiK-tools:current-help-multi'

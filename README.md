@@ -52,10 +52,10 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `current-help-externally` | same as `current-help`, but in externally PDF viewer |
 | `calculation-WPS` | open WPS with loaded `.dat` file |
 | `calculation-WPS-immediately` | run calculation of file in WPS |
-| `calculation-WPS-immediately-current-prog` | run calculation of current module in WPS |
+| `calculation-WPS-current` | run calculation of current module in WPS |
 | `calculation-SPS-immediately` | run calculation of file in SPS |
 | `open-report` | open `.plb` file with ReportViewer |
-| `open-report-automatic-refresh` | open `.plb` file with ReportViewer with flag to automatically refresh file if changed |
+| `open-report-auto-refresh` | open `.plb` file with ReportViewer with flag to automatically refresh file if changed |
 | `save-report-as-PDF` | convert `.plb` to `.pdf` |
 | `save-pictures-as-PDF` | export images from `.plb` |
 | `open-protocol` | open protocol document |
