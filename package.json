@@ -76,8 +76,8 @@
       "SOFiSTiK-tools:open-SOFiPLUS",
       "SOFiSTiK-tools:toggle-help",
       "SOFiSTiK-tools:recache-help",
-      "SOFiSTiK-tools:toggle-dats",
-      "SOFiSTiK-tools:recache-dats",
+      "SOFiSTiK-tools:toggle-examples",
+      "SOFiSTiK-tools:recache-examples",
       "SOFiSTiK-tools:change-version"
     ],
     ".tree-view": [

@@ -12,9 +12,9 @@
   'ctrl-f8'  : 'SOFiSTiK-tools:open-Result-Viewer'
   'f9'       : 'SOFiSTiK-tools:open-report'
 
-'.sofistik-tools.sofistik-help atom-text-editor[mini]':
-  'enter'    : 'SOFiSTiK-help:open-in'
-  'alt-enter': 'SOFiSTiK-help:open-ex'
+'.sofistik-tools.help-list atom-text-editor[mini]':
+  'enter'    : 'help-list:open-in'
+  'alt-enter': 'help-list:open-ex'
 
-'.sofistik-tools.sofistik-dats atom-text-editor[mini]':
-  'enter'    : 'SOFiSTiK-dats:open'
+'.sofistik-tools.example-list atom-text-editor[mini]':
+  'enter'    : 'example-list:open'
