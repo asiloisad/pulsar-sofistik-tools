@@ -67,7 +67,8 @@
       "SOFiSTiK-tools:PROG-above-OFF",
       "SOFiSTiK-tools:PROG-below-toggle",
       "SOFiSTiK-tools:PROG-below-ON",
-      "SOFiSTiK-tools:PROG-below-OFF"
+      "SOFiSTiK-tools:PROG-below-OFF",
+      "SOFiSTiK-tools:clear-URS-tags"
     ],
     "atom-workspace": [
       "SOFiSTiK-tools:IFC-export",
