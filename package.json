@@ -32,8 +32,8 @@
   "activationCommands": {
     "atom-text-editor[data-grammar=\"source sofistik\"]": [
       "SOFiSTiK-tools:current-help",
-      "SOFiSTiK-tools:current-help-multi",
-      "SOFiSTiK-tools:current-help-externally",
+      "SOFiSTiK-tools:current-help-[M]",
+      "SOFiSTiK-tools:current-help-[E]",
       "SOFiSTiK-tools:calculation-WPS",
       "SOFiSTiK-tools:calculation-WPS-immediately",
       "SOFiSTiK-tools:calculation-WPS-current",
