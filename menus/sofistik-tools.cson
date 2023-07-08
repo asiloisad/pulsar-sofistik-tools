@@ -1,0 +1,35 @@
+'context-menu':
+  'atom-text-editor[data-grammar="source sofistik"]': [
+    { 'type': 'separator' }
+    {
+      'label': 'Current Help'
+      'command': 'SOFiSTiK-tools:current-help'
+    }
+    { 'type': 'separator' }
+    {
+      'label': 'Calculation WPS'
+      'command': 'SOFiSTiK-tools:calculation-WPS'
+    }
+    {
+      'label': 'Calculation WPS Immediately'
+      'command': 'SOFiSTiK-tools:calculation-WPS-immediately'
+    }
+    {
+      'label': 'Calculation WPS Current'
+      'command': 'SOFiSTiK-tools:calculation-WPS-current'
+    }
+    { 'type': 'separator' }
+    {
+      'label': 'Open Animator'
+      'command': 'SOFiSTiK-tools:open-Animator'
+    }
+    {
+      'label': 'Open WinGRAF'
+      'command': 'SOFiSTiK-tools:open-WinGRAF'
+    }
+    {
+      'label': 'Open Result Viewer'
+      'command': 'SOFiSTiK-tools:open-Result-Viewer'
+    }
+    { 'type': 'separator' }
+  ]
