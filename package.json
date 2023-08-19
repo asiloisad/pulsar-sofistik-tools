@@ -4,7 +4,7 @@
   "version": "0.1.77",
   "description": "A set of tools for cooperation with the SOFiSTiK software",
   "engines": {
-    "atom": ">=1.56.0 <2.0.0"
+    "atom": ">=1.100.0 <2.0.0"
   },
   "keywords": [
     "bacadra",
@@ -12,9 +12,9 @@
     "tools"
   ],
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/bacadra/atom-sofistik-tools",
-  "url": "https://github.com/bacadra/atom-sofistik-tools",
-  "repository": "https://github.com/bacadra/atom-sofistik-tools",
+  "homepage": "https://github.com/bacadra/pulsar-sofistik-tools",
+  "url": "https://github.com/bacadra/pulsar-sofistik-tools",
+  "repository": "https://github.com/bacadra/pulsar-sofistik-tools",
   "dependencies": {
     "atom-select-list": "^0.8.1",
     "etch": "^0.14.1",

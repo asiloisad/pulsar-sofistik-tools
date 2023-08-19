@@ -1,17 +1,17 @@
 # sofistik-tools
 
 <p align="center">
-  <a href="https://github.com/bacadra/atom-sofistik-tools/tags">
-  <img src="https://img.shields.io/github/v/tag/bacadra/atom-sofistik-tools?style=for-the-badge&label=Latest&color=blue" alt="Latest">
+  <a href="https://github.com/bacadra/pulsar-sofistik-tools/tags">
+  <img src="https://img.shields.io/github/v/tag/bacadra/pulsar-sofistik-tools?style=for-the-badge&label=Latest&color=blue" alt="Latest">
   </a>
-  <a href="https://github.com/bacadra/atom-sofistik-tools/issues">
-  <img src="https://img.shields.io/github/issues-raw/bacadra/atom-sofistik-tools?style=for-the-badge&color=blue" alt="OpenIssues">
+  <a href="https://github.com/bacadra/pulsar-sofistik-tools/issues">
+  <img src="https://img.shields.io/github/issues-raw/bacadra/pulsar-sofistik-tools?style=for-the-badge&color=blue" alt="OpenIssues">
   </a>
-  <a href="https://github.com/bacadra/atom-sofistik-tools/blob/master/package.json">
-  <img src="https://img.shields.io/github/languages/top/bacadra/atom-sofistik-tools?style=for-the-badge&color=blue" alt="Language">
+  <a href="https://github.com/bacadra/pulsar-sofistik-tools/blob/master/package.json">
+  <img src="https://img.shields.io/github/languages/top/bacadra/pulsar-sofistik-tools?style=for-the-badge&color=blue" alt="Language">
   </a>
-  <a href="https://github.com/bacadra/atom-sofistik-tools/blob/master/LICENSE">
-  <img src="https://img.shields.io/github/license/bacadra/atom-sofistik-tools?style=for-the-badge&color=blue" alt="Licence">
+  <a href="https://github.com/bacadra/pulsar-sofistik-tools/blob/master/LICENSE">
+  <img src="https://img.shields.io/github/license/bacadra/pulsar-sofistik-tools?style=for-the-badge&color=blue" alt="Licence">
   </a>
 </p>
 
@@ -19,25 +19,9 @@ A set of tools for cooperation with the SOFiSTiK software.
 
 ## Installation
 
-### Atom Text Editor
+To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`.
 
-The official Atom packages store has been [disabled](https://github.blog/2022-06-08-sunsetting-atom/). To obtain the latest version, please run the following shell command:
-
-```shell
-apm install bacadra/atom-sofistik-tools
-```
-
-This will allow you to directly download the package from the GitHub repository.
-
-### Pulsar Text Editor
-
-The package is compatible with [Pulsar](https://pulsar-edit.dev/) and can be installed using the following command:
-
-```shell
-ppm install bacadra/atom-sofistik-tools
-```
-
-Alternatively, you can directly install [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) from the Pulsar package store.
+Alternatively, run `ppm install bacadra/pulsar-sofistik-tools` to install a package directly from Github repository.
 
 ## Compatibility
 
@@ -51,7 +35,7 @@ The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SO
 
 ## Help view
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/atom-pdf-viewer) is used, then help PDF file can be scrolled to current keyword.
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/pulsar-pdf-viewer) is used, then help PDF file can be scrolled to current keyword.
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
@@ -59,8 +43,8 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| <div style="white-space:nowrap">`current-help`</div> | open help for current module in Atom in single pane |
-| <div style="white-space:nowrap">`current-help-[M]`</div> | open help for current module in Atom, but multi panes |
+| <div style="white-space:nowrap">`current-help`</div> | open help for current module in Pulsar in single pane |
+| <div style="white-space:nowrap">`current-help-[M]`</div> | open help for current module in Pulsar, but multi panes |
 | <div style="white-space:nowrap">`current-help-[E]`</div> | same as `current-help`, but in externally PDF viewer |
 | <div style="white-space:nowrap">`calculation-WPS`</div> | open WPS with loaded `.dat` file |
 | <div style="white-space:nowrap">`calculation-WPS-immediately`</div> | run calculation of file in WPS |
@@ -102,7 +86,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 | Tool | Description |
 |-|-|
-| <div style="white-space:nowrap">`open-help`</div> | open window to choose help document; press `Enter` to open help inside atom or `Alt-Enter` to open externally; open inside atom is possible only with any PDF viewer package |
+| <div style="white-space:nowrap">`open-help`</div> | open window to choose help document; press `Enter` to open help inside Pulsar or `Alt-Enter` to open externally; open inside Pulsar is possible only with any PDF viewer package |
 | <div style="white-space:nowrap">`IFC-export`</div> | open IFC export window |
 | <div style="white-space:nowrap">`IFC-import`</div> | open IFC import window |
 | <div style="white-space:nowrap">`change-version`</div> | change globally version of SOFiSTiK program without menu |
