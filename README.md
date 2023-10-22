@@ -90,6 +90,10 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | <div style="white-space:nowrap">`IFC-export`</div> | open IFC export window |
 | <div style="white-space:nowrap">`IFC-import`</div> | open IFC import window |
 | <div style="white-space:nowrap">`change-version`</div> | change globally version of SOFiSTiK program without menu |
+| <div style="white-space:nowrap">`version-2018`</div> | change default version to 2018 |
+| <div style="white-space:nowrap">`version-2020`</div> | change default version to 2020 |
+| <div style="white-space:nowrap">`version-2022`</div> | change default version to 2022 |
+| <div style="white-space:nowrap">`version-2023`</div> | change default version to 2023 |
 | <div style="white-space:nowrap">`open-CDBASE.CHM`</div> | open database description externally; `.chm` browser must be available in system |
 | <div style="white-space:nowrap">`open-SOFiPLUS`</div> | open program |
 

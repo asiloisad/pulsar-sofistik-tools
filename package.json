@@ -79,7 +79,11 @@
       "SOFiSTiK-tools:recache-help",
       "SOFiSTiK-tools:toggle-examples",
       "SOFiSTiK-tools:recache-examples",
-      "SOFiSTiK-tools:change-version"
+      "SOFiSTiK-tools:change-version",
+      "SOFiSTiK-tools:version-2018",
+      "SOFiSTiK-tools:version-2020",
+      "SOFiSTiK-tools:version-2022",
+      "SOFiSTiK-tools:version-2023"
     ],
     ".tree-view": [
       "SOFiSTiK-tools:clean-by-glob-pattern",
