@@ -25,7 +25,7 @@ Alternatively, run `ppm install bacadra/pulsar-sofistik-tools` to install a pack
 
 ## Compatibility
 
-**Support versions of SOFiSTiK are 2023, 2022, 2020 and 2018. English only.** As the package supports many versions of SOFiSTiK, the package hints may become invalid for certain versions due to changing commands and features.
+**Support versions of SOFiSTiK are 2024, 2023, 2022, 2020 and 2018. English only.** As the package supports many versions of SOFiSTiK, the package hints may become invalid for certain versions due to changing commands and features.
 
 ## Configuration
 
@@ -94,6 +94,7 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | <div style="white-space:nowrap">`version-2020`</div> | change default version to 2020 |
 | <div style="white-space:nowrap">`version-2022`</div> | change default version to 2022 |
 | <div style="white-space:nowrap">`version-2023`</div> | change default version to 2023 |
+| <div style="white-space:nowrap">`version-2024`</div> | change default version to 2024 |
 | <div style="white-space:nowrap">`open-CDBASE.CHM`</div> | open database description externally; `.chm` browser must be available in system |
 | <div style="white-space:nowrap">`open-SOFiPLUS`</div> | open program |
 

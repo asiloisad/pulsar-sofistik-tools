@@ -83,7 +83,8 @@
       "SOFiSTiK-tools:version-2018",
       "SOFiSTiK-tools:version-2020",
       "SOFiSTiK-tools:version-2022",
-      "SOFiSTiK-tools:version-2023"
+      "SOFiSTiK-tools:version-2023",
+      "SOFiSTiK-tools:version-2024"
     ],
     ".tree-view": [
       "SOFiSTiK-tools:clean-by-glob-pattern",
