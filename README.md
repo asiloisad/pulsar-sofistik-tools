@@ -21,7 +21,7 @@ A set of tools for cooperation with the SOFiSTiK software.
 
 To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`.
 
-Alternatively, run `ppm install bacadra/pulsar-sofistik-tools` to install a package directly from Github repository.
+Alternatively, you can run `ppm install bacadra/pulsar-sofistik-tools` to install a package directly from the Github repository.
 
 ## Compatibility
 
