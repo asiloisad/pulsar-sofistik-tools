@@ -33,7 +33,7 @@ The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SO
 
 ## Help view
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/pulsar-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. A package [language-sofistik](https://github.com/bacadra/pulsar-language-sofistik) is required.
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/pulsar-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. A package [language-sofistik](https://github.com/bacadra/pulsar-language-sofistik) is required. A help-list can used named dest also, e.g. `ase:grp2`.
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
