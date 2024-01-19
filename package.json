@@ -97,7 +97,9 @@
       "SOFiSTiK-tools:clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]",
       "SOFiSTiK-tools:clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]",
       "SOFiSTiK-tools:MSCA-Fix-[S]",
-      "SOFiSTiK-tools:MSCA-Fix-[R]"
+      "SOFiSTiK-tools:MSCA-Fix-[R]",
+      "SOFiSTiK-tools:open-Animator",
+      "SOFiSTiK-tools:open-Animator-2018"
     ]
   },
   "license": "MIT",
