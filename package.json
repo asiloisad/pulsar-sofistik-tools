@@ -68,13 +68,13 @@
       "SOFiSTiK-tools:PROG-below-toggle",
       "SOFiSTiK-tools:PROG-below-ON",
       "SOFiSTiK-tools:PROG-below-OFF",
-      "SOFiSTiK-tools:clear-URS-tags"
+      "SOFiSTiK-tools:clear-URS-tags",
+      "SOFiSTiK-tools:open-SOFiPLUS"
     ],
     "atom-workspace": [
       "SOFiSTiK-tools:IFC-export",
       "SOFiSTiK-tools:IFC-import",
       "SOFiSTiK-tools:open-cdbase.chm",
-      "SOFiSTiK-tools:open-SOFiPLUS",
       "SOFiSTiK-tools:toggle-help",
       "SOFiSTiK-tools:recache-help",
       "SOFiSTiK-tools:toggle-examples",
