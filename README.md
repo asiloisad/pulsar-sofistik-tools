@@ -1,20 +1,5 @@
 # sofistik-tools
 
-<p align="center">
-  <a href="https://github.com/bacadra/pulsar-sofistik-tools/tags">
-  <img src="https://img.shields.io/github/v/tag/bacadra/pulsar-sofistik-tools?style=for-the-badge&label=Latest&color=blue" alt="Latest">
-  </a>
-  <a href="https://github.com/bacadra/pulsar-sofistik-tools/issues">
-  <img src="https://img.shields.io/github/issues-raw/bacadra/pulsar-sofistik-tools?style=for-the-badge&color=blue" alt="OpenIssues">
-  </a>
-  <a href="https://github.com/bacadra/pulsar-sofistik-tools/blob/master/package.json">
-  <img src="https://img.shields.io/github/languages/top/bacadra/pulsar-sofistik-tools?style=for-the-badge&color=blue" alt="Language">
-  </a>
-  <a href="https://github.com/bacadra/pulsar-sofistik-tools/blob/master/LICENSE">
-  <img src="https://img.shields.io/github/license/bacadra/pulsar-sofistik-tools?style=for-the-badge&color=blue" alt="Licence">
-  </a>
-</p>
-
 A set of tools for cooperation with the SOFiSTiK software.
 
 ## Installation
@@ -23,7 +8,7 @@ To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.
 
 ## Compatibility
 
-**Support versions of SOFiSTiK are 2024, 2023, 2022, 2020 and 2018. English only.** As the package supports many versions of SOFiSTiK, the package hints may become invalid for certain versions due to changing commands and features.
+**Support versions of SOFiSTiK are 2024, 2023, 2022, 2020 and 2018. English only.**
 
 ## Configuration
 
@@ -109,6 +94,6 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 | `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]` | delete files only in selected paths |
 | `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]` | delete files recursively from selected paths |
 
-# Contributing [🍺](https://www.buymeacoffee.com/asiloisad)
+# Contributing
 
 If you have any ideas on how to improve the package, spot any bugs, or would like to support the development of new features, please feel free to share them via GitHub.
