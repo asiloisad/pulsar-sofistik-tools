@@ -48,7 +48,7 @@ The help view can be opened in any internal or external PDF viewers. If [pdf-vie
 | `open-Teddy-4` | open `.dat` file externally in Teddy in slot 4 |
 | `open-SOFiPLUS` | open `.dwg` file only if exists else just open program |
 | `export-CDB-to-DAT` | open export window from `.cdb` to `.dat` |
-| `export-PLB-to-DOCX` | convert `.plb` file to `.docx`; work only with SOFiSTiK 2020 or higher versions |
+| `export-PLB-to-DOCX` | convert `.plb` file to `.docx`; work with SOFiSTiK 2020 or higher versions only |
 | `PROG-current-toggle` | toggle state of PROG of current program |
 | `PROG-all-toggle` | toggle all programs |
 | `PROG-all-ON` | turn ON all programs |

@@ -3,33 +3,33 @@
     { 'type': 'separator' }
     {
       'label': 'Current Help'
-      'command': 'SOFiSTiK-tools:current-help'
+      'command': 'sofistik-tools:current-help'
     }
     { 'type': 'separator' }
     {
       'label': 'Calculation WPS'
-      'command': 'SOFiSTiK-tools:calculation-WPS'
+      'command': 'sofistik-tools:calculation-WPS'
     }
     {
       'label': 'Calculation WPS Immediately'
-      'command': 'SOFiSTiK-tools:calculation-WPS-immediately'
+      'command': 'sofistik-tools:calculation-WPS-immediately'
     }
     {
       'label': 'Calculation WPS Current'
-      'command': 'SOFiSTiK-tools:calculation-WPS-current'
+      'command': 'sofistik-tools:calculation-WPS-current'
     }
     { 'type': 'separator' }
     {
       'label': 'Open Animator'
-      'command': 'SOFiSTiK-tools:open-Animator'
+      'command': 'sofistik-tools:open-Animator'
     }
     {
       'label': 'Open WinGRAF'
-      'command': 'SOFiSTiK-tools:open-WinGRAF'
+      'command': 'sofistik-tools:open-WinGRAF'
     }
     {
       'label': 'Open Result Viewer'
-      'command': 'SOFiSTiK-tools:open-Result-Viewer'
+      'command': 'sofistik-tools:open-Result-Viewer'
     }
     { 'type': 'separator' }
   ]
