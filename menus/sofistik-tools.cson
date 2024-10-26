@@ -21,15 +21,15 @@
     { 'type': 'separator' }
     {
       'label': 'Open Animator'
-      'command': 'sofistik-tools:open-Animator'
+      'command': 'sofistik-tools:open-animator'
     }
     {
       'label': 'Open WinGRAF'
-      'command': 'sofistik-tools:open-WinGRAF'
+      'command': 'sofistik-tools:open-wingraf'
     }
     {
       'label': 'Open Result Viewer'
-      'command': 'sofistik-tools:open-Result-Viewer'
+      'command': 'sofistik-tools:open-result-viewer'
     }
     { 'type': 'separator' }
   ]

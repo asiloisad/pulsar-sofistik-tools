@@ -49,16 +49,16 @@ The help view can be opened in any internal or external PDF viewers. If [pdf-vie
 | `open-SOFiPLUS` | open `.dwg` file only if exists else just open program |
 | `export-CDB-to-DAT` | open export window from `.cdb` to `.dat` |
 | `export-PLB-to-DOCX` | convert `.plb` file to `.docx`; work with SOFiSTiK 2020 or higher versions only |
-| `PROG-current-toggle` | toggle state of PROG of current program |
-| `PROG-all-toggle` | toggle all programs |
-| `PROG-all-ON` | turn ON all programs |
-| `PROG-all-OFF` | turn OFF all programs |
-| `PROG-above-toggle` | toggle programs above cursor |
-| `PROG-above-ON` | turn ON programs above cursor |
-| `PROG-above-OFF` | turn OFF programs above cursor |
-| `PROG-below-toggle` | toggle programs below cursor |
-| `PROG-below-ON` | turn ON programs below cursor |
-| `PROG-below-OFF` | turn OFF programs below cursor |
+| `progam-current-toggle` | toggle state of progam of current program |
+| `progam-all-toggle` | toggle all programs |
+| `progam-all-ON` | turn ON all programs |
+| `progam-all-OFF` | turn OFF all programs |
+| `progam-above-toggle` | toggle programs above cursor |
+| `progam-above-ON` | turn ON programs above cursor |
+| `progam-above-OFF` | turn OFF programs above cursor |
+| `progam-below-toggle` | toggle programs below cursor |
+| `progam-below-ON` | turn ON programs below cursor |
+| `progam-below-OFF` | turn OFF programs below cursor |
 | `clear-URS-tags` | delete all urs tags |
 
 ## Tools available in `atom-workspace`
@@ -76,12 +76,10 @@ The help view can be opened in any internal or external PDF viewers. If [pdf-vie
 
 | Tool | Description |
 |-|-|
-| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB]` | delete files recursively from selected paths |
-| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE]` | delete files recursively from selected paths |
-| `clean-[S]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]` | delete files only in selected paths |
-| `clean-[R]-[ERG-PRT-LST-URS-SDB-DB2-PL-$??-#??-GRB-CDI-CDE-CDB-PLB-BAK-SDB-DOCX-CFG-CSM]` | delete files recursively from selected paths |
+| `clean-small` & `clean-small-recursively` | |
+| `clean-medium` & `clean-medium-recursively` | |
+| `clean-large` & `clean-large-recursively` | |
+| `clean-max` & `clean-max-recursively` | |
 
 # Contributing
 
