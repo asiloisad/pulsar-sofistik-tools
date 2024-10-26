@@ -1,6 +1,6 @@
 # sofistik-tools
 
-A set of tools for cooperation with the SOFiSTiK software.
+A superset of commands to improve SOFiSTiK workflow.
 
 ## Installation
 
@@ -8,13 +8,13 @@ To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.
 
 ## Compatibility
 
-**Support versions of SOFiSTiK are 2024, 2023, 2022, 2020 and 2018. English only.**
+**Support versions of SOFiSTiK are 2025, 2023, 2022, 2020 and 2018. English only.**
 
 ## Configuration
 
 The most important part is to correctly set the software installation path and the SOFiSTiK version. You can do it in package settings.
 
-The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SOFiSTiK 2022`, `@ SOFiSTiK 2018`, `@ SOFiSTiK 2018-12`. This overwrite global package settings.
+The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SOFiSTiK 2022`, `@ SOFiSTiK 2018`, `@ SOFiSTiK 2018-12`. This overwrite global package settings for all commands run from text-editor scope.
 
 ## Help view
 
@@ -22,68 +22,57 @@ The help view can be opened in any internal or external PDF viewers. If [pdf-vie
 
 ## Tools available in `source.sofistik` (e.g. `.dat` file)
 
-The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
-
 | Tool | Description |
 |-|-|
-| <div style="white-space:nowrap">`current-help`</div> | open help for current module in Pulsar in single pane |
-| <div style="white-space:nowrap">`current-help-[M]`</div> | open help for current module in Pulsar, but multi panes |
-| <div style="white-space:nowrap">`current-help-[E]`</div> | same as `current-help`, but in externally PDF viewer |
-| <div style="white-space:nowrap">`calculation-WPS`</div> | open WPS with loaded `.dat` file |
-| <div style="white-space:nowrap">`calculation-WPS-immediately`</div> | run calculation of file in WPS |
-| <div style="white-space:nowrap">`calculation-WPS-current`</div> | run calculation of current module in WPS |
-| <div style="white-space:nowrap">`calculation-SPS-immediately`</div> | run calculation of file in SPS |
-| <div style="white-space:nowrap">`open-report`</div> | open `.plb` file with ReportViewer |
-| <div style="white-space:nowrap">`open-report-auto-refresh`</div> | open `.plb` file with ReportViewer with flag to automatically refresh file if changed |
-| <div style="white-space:nowrap">`save-report-as-PDF`</div> | convert `.plb` to `.pdf` |
-| <div style="white-space:nowrap">`save-pictures-as-PDF`</div> | export images from `.plb` |
-| <div style="white-space:nowrap">`open-protocol`</div> | open protocol document |
-| <div style="white-space:nowrap">`open-Animator`</div> | open `.cdb` in Animator or System Visualization |
-| <div style="white-space:nowrap">`open-SSD`</div> | open `.sofistik` file in SSD |
-| <div style="white-space:nowrap">`open-WinGRAF`</div> | open `.gra` file with same name as `.dat` file |
-| <div style="white-space:nowrap">`open-Result-Viewer`</div> | open `.result` file with same name as `.dat` file |
-| <div style="white-space:nowrap">`open-Teddy`</div> | open `.dat` file externally in Teddy |
-| <div style="white-space:nowrap">`open-Teddy-single`</div> | open `.dat` file externally in Teddy |
-| <div style="white-space:nowrap">`open-Teddy-1`</div> | open `.dat` file externally in Teddy in slot 1 |
-| <div style="white-space:nowrap">`open-Teddy-2`</div> | open `.dat` file externally in Teddy in slot 2 |
-| <div style="white-space:nowrap">`open-Teddy-3`</div> | open `.dat` file externally in Teddy in slot 3 |
-| <div style="white-space:nowrap">`open-Teddy-4`</div> | open `.dat` file externally in Teddy in slot 4 |
-| <div style="white-space:nowrap">`open-SOFiPLUS`</div> | open `.dwg` file only if exists else just open program |
-| <div style="white-space:nowrap">`export-CDB-to-DAT`</div> | open export window from `.cdb` to `.dat` |
-| <div style="white-space:nowrap">`export-PLB-to-DOCX`</div> | convert `.plb` file to `.docx`; work only with SOFiSTiK 2020 or higher versions |
-| <div style="white-space:nowrap">`PROG-current-toggle`</div> | toggle state of PROG of current program |
-| <div style="white-space:nowrap">`PROG-all-toggle`</div> | toggle all programs |
-| <div style="white-space:nowrap">`PROG-all-ON`</div> | turn ON all programs |
-| <div style="white-space:nowrap">`PROG-all-OFF`</div> | turn OFF all programs |
-| <div style="white-space:nowrap">`PROG-above-toggle`</div> | toggle programs above cursor |
-| <div style="white-space:nowrap">`PROG-above-ON`</div> | turn ON programs above cursor |
-| <div style="white-space:nowrap">`PROG-above-OFF`</div> | turn OFF programs above cursor |
-| <div style="white-space:nowrap">`PROG-below-toggle`</div> | toggle programs below cursor |
-| <div style="white-space:nowrap">`PROG-below-ON`</div> | turn ON programs below cursor |
-| <div style="white-space:nowrap">`PROG-below-OFF`</div> | turn OFF programs below cursor |
-| <div style="white-space:nowrap">`clear-URS-tags`</div> | delete all urs tags |
+| `current-help` | open help for current module in Pulsar in single pane |
+| `current-help-[M]` | open help for current module in Pulsar, but multi panes |
+| `current-help-[E]` | same as `current-help`, but in externally PDF viewer |
+| `calculation-WPS` | open WPS with loaded `.dat` file |
+| `calculation-WPS-immediately` | run calculation of file in WPS |
+| `calculation-WPS-current` | run calculation of current module in WPS |
+| `calculation-SPS-immediately` | run calculation of file in SPS |
+| `open-report` | open `.plb` file with ReportViewer |
+| `open-report-auto-refresh` | open `.plb` file with ReportViewer with flag to automatically refresh file if changed |
+| `save-report-as-PDF` | convert `.plb` to `.pdf` |
+| `save-pictures-as-PDF` | export images from `.plb` |
+| `open-protocol` | open protocol document |
+| `open-Animator` | open `.cdb` in Animator or System Visualization |
+| `open-SSD` | open `.sofistik` file in SSD |
+| `open-WinGRAF` | open `.gra` file with same name as `.dat` file |
+| `open-Result-Viewer` | open `.result` file with same name as `.dat` file |
+| `open-Teddy` | open `.dat` file externally in Teddy |
+| `open-Teddy-single` | open `.dat` file externally in Teddy |
+| `open-Teddy-1` | open `.dat` file externally in Teddy in slot 1 |
+| `open-Teddy-2` | open `.dat` file externally in Teddy in slot 2 |
+| `open-Teddy-3` | open `.dat` file externally in Teddy in slot 3 |
+| `open-Teddy-4` | open `.dat` file externally in Teddy in slot 4 |
+| `open-SOFiPLUS` | open `.dwg` file only if exists else just open program |
+| `export-CDB-to-DAT` | open export window from `.cdb` to `.dat` |
+| `export-PLB-to-DOCX` | convert `.plb` file to `.docx`; work only with SOFiSTiK 2020 or higher versions |
+| `PROG-current-toggle` | toggle state of PROG of current program |
+| `PROG-all-toggle` | toggle all programs |
+| `PROG-all-ON` | turn ON all programs |
+| `PROG-all-OFF` | turn OFF all programs |
+| `PROG-above-toggle` | toggle programs above cursor |
+| `PROG-above-ON` | turn ON programs above cursor |
+| `PROG-above-OFF` | turn OFF programs above cursor |
+| `PROG-below-toggle` | toggle programs below cursor |
+| `PROG-below-ON` | turn ON programs below cursor |
+| `PROG-below-OFF` | turn OFF programs below cursor |
+| `clear-URS-tags` | delete all urs tags |
 
 ## Tools available in `atom-workspace`
 
-The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
-
 | Tool | Description |
 |-|-|
-| <div style="white-space:nowrap">`open-help`</div> | open window to choose help document; press `Enter` to open help inside Pulsar or `Alt-Enter` to open externally; open inside Pulsar is possible only with any PDF viewer package |
-| <div style="white-space:nowrap">`IFC-export`</div> | open IFC export window |
-| <div style="white-space:nowrap">`IFC-import`</div> | open IFC import window |
-| <div style="white-space:nowrap">`change-version`</div> | change globally version of SOFiSTiK program without menu |
-| <div style="white-space:nowrap">`version-2018`</div> | change default version to 2018 |
-| <div style="white-space:nowrap">`version-2020`</div> | change default version to 2020 |
-| <div style="white-space:nowrap">`version-2022`</div> | change default version to 2022 |
-| <div style="white-space:nowrap">`version-2023`</div> | change default version to 2023 |
-| <div style="white-space:nowrap">`version-2024`</div> | change default version to 2024 |
-| <div style="white-space:nowrap">`open-CDBASE.CHM`</div> | open database description externally; `.chm` browser must be available in system |
-| <div style="white-space:nowrap">`open-SOFiPLUS`</div> | open program |
+| `open-help` | open window to choose help document; press `Enter` to open help inside Pulsar or `Alt-Enter` to open externally; open inside Pulsar is possible only with any PDF viewer package |
+| `IFC-export` | open IFC export window |
+| `IFC-import` | open IFC import window |
+| `change-version` | change globally version of SOFiSTiK program without menu |
+| `open-CDBASE.CHM` | open database description externally; `.chm` browser must be available in system |
+| `open-SOFiPLUS` | open program |
 
 ## Tools available in `.tree-view`
-
-The tools listed below should be called up via the Command Palette as `SOFiSTiK-tools:...`
 
 | Tool | Description |
 |-|-|
@@ -96,4 +85,4 @@ The tools listed below should be called up via the Command Palette as `SOFiSTiK-
 
 # Contributing
 
-If you have any ideas on how to improve the package, spot any bugs, or would like to support the development of new features, please feel free to share them via GitHub.
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback’s welcome!
