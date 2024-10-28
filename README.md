@@ -1,6 +1,6 @@
 # sofistik-tools
 
-A superset of commands to improve SOFiSTiK workflow.
+A superset of commands to improve SOFiSTiK workflow. A grammar supply package is required, e.g. [language-sofistik](https://github.com/bacadra/pulsar-language-sofistik).
 
 ## Installation
 
