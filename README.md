@@ -73,10 +73,10 @@ Command | Description
 
 Command | Description
 |-|-|
-`.clean-1` | delete files `.erg`, `.prt`, `.lst`, `.urs`, `.sdb`, `.db-2`, `.pl`, `.$??`, `.#??`, `.grb`
+`.clean-1` | delete files `.erg`, `.prt`, `.lst`, `.urs`, `.sdb`, `.db-2`, `.pl`, `.$*`, `.#*`, `.grb`, `.err`, `.error_positions`, `.cfg`
 `.clean-2` | delete files like `1` and `.cdi`, `.cde`
-`.clean-3` | delete files like `2` and `.cdb`, `.error_positions`
-`.clean-4` | delete files like `3` and `.plb`, `.bak`, `.docx`, `.cfg`, `_csm.dat`, `_csmlf.dat`
+`.clean-3` | delete files like `2` and `.cdb`
+`.clean-4` | delete files like `3` and `.plb`, `.bak`, `.docx`, `_csm.dat`, `_csmlf.dat`
 
 # Contributing
 
