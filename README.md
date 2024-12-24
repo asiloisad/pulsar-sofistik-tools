@@ -76,7 +76,7 @@ Command | Description
 `.clean-1` | delete files `.erg`, `.prt`, `.lst`, `.urs`, `.sdb`, `.db-2`, `.pl`, `.$*`, `.#*`, `.grb`, `.err`, `.error_positions`, `.cfg`
 `.clean-2` | delete files like `1` and `.cdi`, `.cde`
 `.clean-3` | delete files like `2` and `.cdb`
-`.clean-4` | delete files like `3` and `.plb`, `.bak`, `.docx`, `_csm.dat`, `_csmlf.dat`
+`.clean-4` | delete files like `3` and `.plb`, `.bak`, `_csm.dat`, `_csmlf.dat`
 
 # Contributing
 
