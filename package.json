@@ -3,7 +3,6 @@
   "description": "A superset of commands to improve SOFiSTiK workflow",
   "repository": "https://github.com/bacadra/pulsar-sofistik-tools",
   "keywords": [
-    "bacadra",
     "sofistik",
     "tools"
   ],
@@ -102,7 +101,7 @@
         "^1.0.0": "consumeTreeView"
       }
     }
-  },  
+  },
   "dependencies": {
     "atom-select-list": "^0.8.1",
     "etch": "^0.14.1",
