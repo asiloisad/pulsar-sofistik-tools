@@ -1,33 +1,18 @@
 {
   "name": "sofistik-tools",
-  "main": "./lib/main",
-  "version": "1.2.0",
   "description": "A superset of commands to improve SOFiSTiK workflow",
-  "engines": {
-    "atom": ">=1.100.0 <2.0.0"
-  },
+  "repository": "https://github.com/bacadra/pulsar-sofistik-tools",
   "keywords": [
     "bacadra",
     "sofistik",
     "tools"
   ],
-  "readmeFilename": "README.md",
-  "homepage": "https://github.com/bacadra/pulsar-sofistik-tools",
-  "url": "https://github.com/bacadra/pulsar-sofistik-tools",
-  "repository": "https://github.com/bacadra/pulsar-sofistik-tools",
-  "dependencies": {
-    "atom-select-list": "^0.8.1",
-    "etch": "^0.14.1",
-    "glob": "^10.3.3",
-    "minimatch": "^5.1.0"
+  "version": "1.2.0",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.100.0 <2.0.0"
   },
-  "consumedServices": {
-    "tree-view": {
-      "versions": {
-        "^1.0.0": "consumeTreeView"
-      }
-    }
-  },
+  "main": "./lib/main",
   "activationCommands": {
     "atom-text-editor[data-grammar=\"source sofistik\"]": [
       "sofistik-tools:current-help",
@@ -111,8 +96,17 @@
       "sofistik-tools:export-CDB"
     ]
   },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/glob": "^8.0.0"
+  "consumedServices": {
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
+      }
+    }
+  },  
+  "dependencies": {
+    "atom-select-list": "^0.8.1",
+    "etch": "^0.14.1",
+    "glob": "^10.3.3",
+    "minimatch": "^5.1.0"
   }
 }
