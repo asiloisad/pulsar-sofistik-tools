@@ -1,10 +1,10 @@
 # sofistik-tools
 
-A superset of commands to improve SOFiSTiK workflow. A grammar supply package is required, e.g. [language-sofistik](https://github.com/bacadra/pulsar-language-sofistik).
+A superset of commands to improve SOFiSTiK workflow. A grammar supply package is required, e.g. [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik).
 
 ## Installation
 
-To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`. Alternatively, you can run `ppm install bacadra/pulsar-sofistik-tools` to install a package directly from the Github repository.
+To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`. Alternatively, you can run `ppm install asiloisad/pulsar-sofistik-tools` to install a package directly from the Github repository.
 
 ## Compatibility
 
@@ -16,7 +16,7 @@ The most important part is to correctly set the software installation path and t
 
 ## Help view
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/bacadra/pulsar-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. A package [language-sofistik](https://github.com/bacadra/pulsar-language-sofistik) is required. A help-list can used named destination (e.g. `ase:grp2`).
+The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. A package [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik) is required. A help-list can used named destination (e.g. `ase:grp2`).
 
 ## Commands in `source.sofistik` (e.g. `.dat` file)
 

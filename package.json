@@ -1,7 +1,7 @@
 {
   "name": "sofistik-tools",
   "description": "A superset of commands to improve SOFiSTiK workflow",
-  "repository": "https://github.com/bacadra/pulsar-sofistik-tools",
+  "repository": "https://github.com/asiloisad/pulsar-sofistik-tools",
   "keywords": [
     "sofistik",
     "tools"
