@@ -107,5 +107,29 @@
     "etch": "^0.14.1",
     "glob": "^10.3.3",
     "minimatch": "^5.1.0"
+  },
+  "configSchema": {
+    "envPath": {
+      "order": 1,
+      "title": "SOFiSTiK installation path",
+      "description": "Path to the SOFiSTiK installation folder.",
+      "type": "string",
+      "default": "C:\\Program Files\\SOFiSTiK"
+    },
+    "version": {
+      "order": 2,
+      "title": "SOFiSTiK program version",
+      "description": "Select the software version for which the programs will be used. Ensure that the software and licence are available on your computer.",
+      "type": "string",
+      "enum": ["2025", "2024", "2023", "2022", "2020", "2018"],
+      "default": "2025"
+    },
+    "showKeystrokes": {
+      "order": 3,
+      "title": "Enable keystroke hints",
+      "description": "Show info message with keystroke in lists",
+      "type": "boolean",
+      "default": true
+    }
   }
 }
