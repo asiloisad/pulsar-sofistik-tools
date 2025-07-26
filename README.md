@@ -8,7 +8,7 @@ To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.
 
 ## Compatibility
 
-Support versions of SOFiSTiK are 2025, 2024, 2023, 2022, 2020 and 2018. English only.
+Support versions of SOFiSTiK are 2026, 2025, 2024, 2023, 2022, 2020 and 2018. English only.
 
 ## Configuration
 

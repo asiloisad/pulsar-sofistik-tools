@@ -73,8 +73,8 @@
       "sofistik-tools:clean-3-recursively",
       "sofistik-tools:clean-4",
       "sofistik-tools:clean-4-recursively",
-      "sofistik-tools:MSCA-fix",
-      "sofistik-tools:MSCA-fix-recursively",
+      "sofistik-tools:wing-fix",
+      "sofistik-tools:wing-fix-recursively",
       "sofistik-tools:open-animator",
       "sofistik-tools:open-animator-2018",
       "sofistik-tools:open-report",
@@ -124,6 +124,7 @@
       "description": "Select the software version for which the programs will be used. Ensure that the software and licence are available on your computer.",
       "type": "string",
       "enum": [
+        "2026",
         "2025",
         "2024",
         "2023",
@@ -131,7 +132,7 @@
         "2020",
         "2018"
       ],
-      "default": "2025"
+      "default": "2026"
     },
     "showKeystrokes": {
       "order": 3,
