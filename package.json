@@ -107,7 +107,7 @@
   "dependencies": {
     "atom-select-list": "^0.8.1",
     "etch": "^0.14.1",
-    "glob": "^10.4.5",
+    "glob": "^11.1.0",
     "minimatch": "^5.1.6"
   },
   "configSchema": {
