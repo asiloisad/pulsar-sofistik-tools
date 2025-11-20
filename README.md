@@ -14,6 +14,21 @@ Support versions of SOFiSTiK are 2026, 2025, 2024, 2023, 2022, 2020 and 2018. En
 
 The most important part is to correctly set the software installation path and the SOFiSTiK version. You can do it in package settings. The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SOFiSTiK 2022`, `@ SOFiSTiK 2018`, `@ SOFiSTiK 2018-12`. This overwrite global package settings for all commands run from text-editor scope.
 
+## Version Resolution
+
+The package determines which SOFiSTiK version to use in the following priority order:
+
+1. **Shebang in file**: `@ SOFiSTiK 2024` comment in the current file (searched backwards from cursor position)
+2. **Project configuration**: `sofistik.def` file in the same directory as the current file with `SOF_VERSION = 2024` setting
+3. **Global package setting**: Version configured in the package settings
+
+This allows you to set project-specific versions by creating a `sofistik.def` file in your project folder:
+
+```
+SOF_VERSION = 2024
+```
+
+
 ## Help view
 
 The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. A package [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik) is required. A help-list can used named destination (e.g. `ase:grp2`).
