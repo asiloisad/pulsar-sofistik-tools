@@ -8,87 +8,141 @@ To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.
 
 ## Configuration
 
-The most important part is to correctly set the software installation path and the SOFiSTiK version. You can do it in package settings. The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SOFiSTiK 2022`, `@ SOFiSTiK 2018`, `@ SOFiSTiK 2018-12`. This overwrite global package settings for all commands run from text-editor scope.
+| Setting | Description |
+|-|-|
+| SOFiSTiK installation path | Path to the SOFiSTiK installation folder (default: `C:\Program Files\SOFiSTiK`) |
+| Enable keystroke hints | Show info message with keystroke hints in selection lists |
 
 ## Version Resolution
 
 The package determines which SOFiSTiK version to use in the following priority order:
 
-1. **Shebang in file**: `@ SOFiSTiK 2024` comment in the current file (searched backwards from cursor position)
-2. **Project configuration**: `sofistik.def` file in the same directory as the current file with `SOF_VERSION = 2024` setting
-3. **Global package setting**: Version configured in the package settings
+1. **Shebang in file**: `@ SOFiSTiK 2026` or `@ SOFiSTiK 2024-05` comment in the file (searched backwards from cursor)
+2. **Project configuration**: `sofistik.def` file in the same directory with `SOF_VERSION = 2026`
+3. **Package setting**: Version configured in [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik) settings
 
-This allows you to set project-specific versions by creating a `sofistik.def` file in your project folder:
+## Features
 
-```
-SOF_VERSION = 2024
-```
+### Help System
 
+The help view opens PDF manuals directly in Pulsar using [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer). When cursor is on a command, it jumps to that command's documentation.
 
-## Help view
+### File Handlers
 
-The help view can be opened in any internal or external PDF viewers. If [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer) is used, then help PDF file can be scrolled to current keyword. A package [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik) is required. A help-list can used named destination (e.g. `ase:grp2`).
+The package registers handlers for SOFiSTiK file types. Double-clicking these files in tree-view opens them in the appropriate application:
 
-## Commands in `source.sofistik` (e.g. `.dat` file)
-
-Command | Description
+| Extension | Application |
 |-|-|
-`.current-help` | open help for current module in Pulsar in single pane
-`.current-help-[M]` | open help for current module in Pulsar, but multi panes
-`.current-help-[E]` | same as `current-help`, but in externally PDF viewer
-`.calculation-WPS` | open WPS with loaded `.dat` file
-`.calculation-WPS-immediately` | run calculation of file in WPS
-`.calculation-WPS-current` | run calculation of current module in WPS
-`.calculation-SPS-immediately` | run calculation of file in SPS
-`.open-report` | open `.plb` file with ReportViewer
-`.save-report-as-PDF` | convert `.plb` to `.pdf`
-`.save-pictures-as-PDF` | export images from `.plb`
-`.open-protocol` | open protocol document
-`.open-Animator` | open `.cdb` in Animator or System Visualization
-`.open-SSD` | open `.sofistik` file in SSD
-`.open-WinGRAF` | open `.gra` file with same name as `.dat` file
-`.open-Result-Viewer` | open `.result` file with same name as `.dat` file
-`.open-Teddy` | open `.dat` file externally in Teddy
-`.open-Teddy-single` | open `.dat` file externally in Teddy
-`.open-Teddy-1` | open `.dat` file externally in Teddy in slot 1
-`.open-Teddy-2` | open `.dat` file externally in Teddy in slot 2
-`.open-Teddy-3` | open `.dat` file externally in Teddy in slot 3
-`.open-Teddy-4` | open `.dat` file externally in Teddy in slot 4
-`.open-SOFiPLUS` | open `.dwg` file only if exists else just open program
-`.export-CDB-to-DAT` | open export window from `.cdb` to `.dat`
-`.export-PLB-to-DOCX` | convert `.plb` file to `.docx`; work with SOFiSTiK 2020 or higher versions only
-`.progam-current-toggle` | toggle state of progam of current program
-`.progam-all-toggle` | toggle all programs
-`.progam-all-ON` | turn ON all programs
-`.progam-all-OFF` | turn OFF all programs
-`.progam-above-toggle` | toggle programs above cursor
-`.progam-above-ON` | turn ON programs above cursor
-`.progam-above-OFF` | turn OFF programs above cursor
-`.progam-below-toggle` | toggle programs below cursor
-`.progam-below-ON` | turn ON programs below cursor
-`.progam-below-OFF` | turn OFF programs below cursor
-`.clear-URS-tags` | delete all urs tags
+| `.cdb` | Animator |
+| `.plb` | Report Viewer |
+| `.gra` | WinGRAF |
+| `.results` | Result Viewer |
+| `.sofistik` | SSD |
+| `.dwg` | SOFiPLUS (if `sofistik.def` exists) |
 
-## Commands in `atom-workspace`
+### Child Files
 
-Command | Description
+Use `@ child:filename.dat` directive to run multiple files in sequence. Use `@ only-children` to skip the parent file itself.
+
+## Commands in `source.sofistik` scope
+
+Commands available when editing `.dat` files:
+
+| Command | Description |
 |-|-|
-`.open-help` | open window to choose help document
-`.IFC-export` | open IFC export window
-`.IFC-import` | open IFC import window
-`.change-version` | change globally version of SOFiSTiK program without menu
-`.open-CDBASE.CHM` | open database description externally
-`.open-SOFiPLUS` | open program
+| `current-help` | Open help for current module in PDF viewer (reuses pane) |
+| `separately-help` | Open help for current module in new pane |
+| `calculation-wps` | Open WPS with current file |
+| `calculation-wps-immediately` | Run calculation in WPS |
+| `calculation-wps-current` | Run calculation of current program only |
+| `calculation-sps-immediately` | Run calculation in SPS |
+| `open-report` | Open `.plb` file in Report Viewer |
+| `save-report-as-pdf` | Export report to PDF |
+| `save-pictures-as-pdf` | Export pictures from report to PDF |
+| `open-protocol` | Open `.prt` protocol file in editor |
+| `open-animator` | Open `.cdb` in Animator |
+| `open-animator-2018` | Open `.cdb` in Animator 2018 |
+| `open-viewer` | Open `.cdb` in Viewer (2024+) or FEA Viewer (2020-2023) |
+| `open-dbinfo` | Open `.cdb` in Database Info |
+| `open-ssd` | Open `.sofistik` file in SSD |
+| `open-wingraf` | Open `.gra` file in WinGRAF |
+| `open-result-viewer` | Open `.results` file in Result Viewer |
+| `open-teddy` | Open file in Teddy |
+| `open-teddy-single` | Open file in Teddy (single instance) |
+| `open-teddy-1` | Open file in Teddy slot 1 |
+| `open-teddy-2` | Open file in Teddy slot 2 |
+| `open-teddy-3` | Open file in Teddy slot 3 |
+| `open-teddy-4` | Open file in Teddy slot 4 |
+| `open-sofiplus` | Open `.dwg` file in SOFiPLUS |
+| `export-cdb` | Open CDB export dialog |
+| `export-plb-to-docx` | Convert `.plb` to `.docx` (2020+) |
+| `progam-current-toggle` | Toggle current program on/off |
+| `progam-all-toggle` | Toggle all programs |
+| `progam-all-on` | Turn ON all programs |
+| `progam-all-off` | Turn OFF all programs |
+| `progam-above-toggle` | Toggle programs above cursor |
+| `progam-above-on` | Turn ON programs above cursor |
+| `progam-above-off` | Turn OFF programs above cursor |
+| `progam-below-toggle` | Toggle programs below cursor |
+| `progam-below-on` | Turn ON programs below cursor |
+| `progam-below-off` | Turn OFF programs below cursor |
+| `clear-urs-tags` | Remove all URS tags from programs |
 
-## Commands in `.tree-view`
+## Commands in `atom-workspace` scope
 
-Command | Description
+| Command | Description |
 |-|-|
-`.clean-1` | delete files `.erg`, `.prt`, `.lst`, `.urs`, `.sdb`, `.db-2`, `.pl`, `.$*`, `.#*`, `.grb`, `.err`, `.error_positions`, `.dwl`, `.dwl2`, `.cfg`
-`.clean-2` | delete files like `1` and `.cdi`, `.cde`
-`.clean-3` | delete files like `2` and `.cdb`, `.sqlite`
-`.clean-4` | delete files like `3` and `.plb`, `.bak`, `_csm.dat`, `_csmlf.dat`
+| `ifc-export` | Open IFC export dialog |
+| `ifc-import` | Open IFC import dialog |
+| `open-cdbase.chm` | Open database description (CDBASE.CHM) |
+
+## Commands in `.tree-view` scope
+
+Commands available when right-clicking in tree view:
+
+### File Operations
+
+| Command | Description |
+|-|-|
+| `open-animator` | Open selected `.cdb` in Animator |
+| `open-animator-2018` | Open selected `.cdb` in Animator 2018 |
+| `open-report` | Open selected `.plb` in Report Viewer |
+| `save-report-as-pdf` | Export selected report to PDF |
+| `save-pictures-as-pdf` | Export pictures from selected report |
+| `open-protocol` | Open selected `.prt` file |
+| `open-viewer` | Open selected `.cdb` in Viewer |
+| `open-viewer-2025` | Open selected `.cdb` in Viewer 2025 |
+| `open-dbinfo` | Open selected `.cdb` in Database Info |
+| `open-ssd` | Open selected `.sofistik` in SSD |
+| `open-wingraf` | Open selected `.gra` in WinGRAF |
+| `open-result-viewer` | Open selected `.results` in Result Viewer |
+| `open-teddy` | Open selected file in Teddy |
+| `open-teddy-single` | Open in Teddy (single instance) |
+| `open-teddy-1` to `open-teddy-4` | Open in Teddy slot 1-4 |
+| `open-sofiplus` | Open selected `.dwg` in SOFiPLUS |
+| `export-cdb` | Open CDB export for selected file |
+
+### Clean Commands
+
+Delete temporary and output files from selected folders:
+
+| Command | Files Deleted |
+|-|-|
+| `clean-1` | `.erg` `.prt` `.lst` `.urs` `.sdb` `.db-2` `.pl` `.$*` `.#*` `.grb` `.err` `.error_positions` `.dwl` `.dwl2` `.cfg` |
+| `clean-2` | Above + `.cdi` `.cde` |
+| `clean-3` | Above + `.cdb` `.sqlite` |
+| `clean-4` | Above + `.plb` `.bak` `_csm.dat` `_csmlf.dat` |
+| `clean-glob` | Custom glob pattern |
+
+Add `-recursively` suffix to clean subdirectories (e.g., `clean-1-recursively`).
+
+### WinGRAF Fix
+
+| Command | Description |
+|-|-|
+| `wing-fix` | Fix MSCA issues in `.gra` files |
+| `wing-fix-recursively` | Fix MSCA issues recursively |
 
 # Contributing
 
-Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback’s welcome!
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback's welcome!

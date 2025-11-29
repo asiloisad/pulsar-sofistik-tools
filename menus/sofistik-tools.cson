@@ -8,15 +8,15 @@
     { 'type': 'separator' }
     {
       'label': 'Calculation WPS'
-      'command': 'sofistik-tools:calculation-WPS'
+      'command': 'sofistik-tools:calculation-wps'
     }
     {
       'label': 'Calculation WPS Immediately'
-      'command': 'sofistik-tools:calculation-WPS-immediately'
+      'command': 'sofistik-tools:calculation-wps-immediately'
     }
     {
       'label': 'Calculation WPS Current'
-      'command': 'sofistik-tools:calculation-WPS-current'
+      'command': 'sofistik-tools:calculation-wps-current'
     }
     { 'type': 'separator' }
     {
