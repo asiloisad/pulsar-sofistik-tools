@@ -22,6 +22,16 @@
       "versions": {
         "^1.0.0": "consumeOpenExternalService"
       }
+    },
+    "sofistik.keywords": {
+      "versions": {
+        "^2.0.0": "consumeSofistikKeywords"
+      }
+    },
+    "pdf-viewer": {
+      "versions": {
+        "^1.0.0": "consumePdfViewer"
+      }
     }
   },
   "dependencies": {
@@ -38,24 +48,8 @@
       "type": "string",
       "default": "C:\\Program Files\\SOFiSTiK"
     },
-    "version": {
-      "order": 2,
-      "title": "SOFiSTiK program version",
-      "description": "Select the software version for which the programs will be used. Ensure that the software and licence are available on your computer.",
-      "type": "string",
-      "enum": [
-        "2026",
-        "2025",
-        "2024",
-        "2023",
-        "2022",
-        "2020",
-        "2018"
-      ],
-      "default": "2026"
-    },
     "showKeystrokes": {
-      "order": 3,
+      "order": 2,
       "title": "Enable keystroke hints",
       "description": "Show info message with keystroke in lists",
       "type": "boolean",

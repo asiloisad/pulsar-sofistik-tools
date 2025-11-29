@@ -6,10 +6,6 @@ A superset of commands to improve SOFiSTiK workflow. A grammar supply package is
 
 To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`. Alternatively, you can run `ppm install asiloisad/pulsar-sofistik-tools` to install a package directly from the GitHub repository.
 
-## Compatibility
-
-Support versions of SOFiSTiK are 2026, 2025, 2024, 2023, 2022, 2020 and 2018. English only.
-
 ## Configuration
 
 The most important part is to correctly set the software installation path and the SOFiSTiK version. You can do it in package settings. The package support shebang as regex `^@ SOFiSTiK (\d{4})(-\d\d?)?$`, e.g. `@ SOFiSTiK 2022`, `@ SOFiSTiK 2018`, `@ SOFiSTiK 2018-12`. This overwrite global package settings for all commands run from text-editor scope.
