@@ -35,10 +35,9 @@
     }
   },
   "dependencies": {
-    "atom-select-list": "^0.8.1",
-    "etch": "^0.14.1",
     "glob": "^11.1.0",
-    "minimatch": "^5.1.6"
+    "minimatch": "^5.1.6",
+    "pulsar-select-list": "^1.0.0"
   },
   "configSchema": {
     "envPath": {
@@ -47,13 +46,6 @@
       "description": "Path to the SOFiSTiK installation folder.",
       "type": "string",
       "default": "C:\\Program Files\\SOFiSTiK"
-    },
-    "showKeystrokes": {
-      "order": 2,
-      "title": "Enable keystroke hints",
-      "description": "Show info message with keystroke in lists",
-      "type": "boolean",
-      "default": true
     }
   }
 }

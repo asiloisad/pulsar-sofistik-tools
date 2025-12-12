@@ -1,0 +1,2 @@
+- **Enter** — Open in Pulsar
+- **Alt+Enter** — Open externally
