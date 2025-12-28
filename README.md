@@ -1,19 +1,30 @@
 # sofistik-tools
 
-A superset of commands to improve SOFiSTiK workflow. A grammar supply package is required, e.g. [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik).
+Commands and integrations for SOFiSTiK structural analysis workflow.
+
+## Features
+
+- **Help system**: Open PDF manuals in [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer).
+- **Calculation**: Run WPS/SPS directly from the editor.
+- **File handlers**: Open CDB, PLB, GRA files with double-click.
+- **Program control**: Toggle programs on/off in `.dat` files.
+- **Clean commands**: Delete temporary files from tree-view.
+- **Child files**: Run multiple files with `@ child:filename.dat` directive.
 
 ## Installation
 
 To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`. Alternatively, you can run `ppm install asiloisad/pulsar-sofistik-tools` to install a package directly from the GitHub repository.
 
+This package requires [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik).
+
 ## Configuration
 
 | Setting | Description |
-|-|-|
+| --- | --- |
 | SOFiSTiK installation path | Path to the SOFiSTiK installation folder (default: `C:\Program Files\SOFiSTiK`) |
 | Enable keystroke hints | Show info message with keystroke hints in selection lists |
 
-## Version Resolution
+## Version resolution
 
 The package determines which SOFiSTiK version to use in the following priority order:
 
@@ -23,16 +34,16 @@ The package determines which SOFiSTiK version to use in the following priority o
 
 ## Features
 
-### Help System
+### Help system
 
 The help view opens PDF manuals directly in Pulsar using [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer). When cursor is on a command, it jumps to that command's documentation.
 
-### File Handlers
+### File handlers
 
 The package registers handlers for SOFiSTiK file types. Double-clicking these files in tree-view opens them in the appropriate application:
 
 | Extension | Application |
-|-|-|
+| --- | --- |
 | `.cdb` | Animator |
 | `.plb` | Report Viewer |
 | `.gra` | WinGRAF |
@@ -40,109 +51,102 @@ The package registers handlers for SOFiSTiK file types. Double-clicking these fi
 | `.sofistik` | SSD |
 | `.dwg` | SOFiPLUS (if `sofistik.def` exists) |
 
-### Child Files
+### Child files
 
 Use `@ child:filename.dat` directive to run multiple files in sequence. Use `@ only-children` to skip the parent file itself.
 
-## Commands in `source.sofistik` scope
+## Commands
 
-Commands available when editing `.dat` files:
+Commands available in `source.sofistik` scope when editing `.dat` files:
 
-| Command | Description |
-|-|-|
-| `current-help` | Open help for current module in PDF viewer (reuses pane) |
-| `separately-help` | Open help for current module in new pane |
-| `calculation-wps` | Open WPS with current file |
-| `calculation-wps-immediately` | Run calculation in WPS |
-| `calculation-wps-current` | Run calculation of current program only |
-| `calculation-sps-immediately` | Run calculation in SPS |
-| `open-report` | Open `.plb` file in Report Viewer |
-| `save-report-as-pdf` | Export report to PDF |
-| `save-pictures-as-pdf` | Export pictures from report to PDF |
-| `open-protocol` | Open `.prt` protocol file in editor |
-| `open-animator` | Open `.cdb` in Animator |
-| `open-animator-2018` | Open `.cdb` in Animator 2018 |
-| `open-viewer` | Open `.cdb` in Viewer (2024+) or FEA Viewer (2020-2023) |
-| `open-dbinfo` | Open `.cdb` in Database Info |
-| `open-ssd` | Open `.sofistik` file in SSD |
-| `open-wingraf` | Open `.gra` file in WinGRAF |
-| `open-result-viewer` | Open `.results` file in Result Viewer |
-| `open-teddy` | Open file in Teddy |
-| `open-teddy-single` | Open file in Teddy (single instance) |
-| `open-teddy-1` | Open file in Teddy slot 1 |
-| `open-teddy-2` | Open file in Teddy slot 2 |
-| `open-teddy-3` | Open file in Teddy slot 3 |
-| `open-teddy-4` | Open file in Teddy slot 4 |
-| `open-sofiplus` | Open `.dwg` file in SOFiPLUS |
-| `export-cdb` | Open CDB export dialog |
-| `export-plb-to-docx` | Convert `.plb` to `.docx` (2020+) |
-| `progam-current-toggle` | Toggle current program on/off |
-| `progam-all-toggle` | Toggle all programs |
-| `progam-all-on` | Turn ON all programs |
-| `progam-all-off` | Turn OFF all programs |
-| `progam-above-toggle` | Toggle programs above cursor |
-| `progam-above-on` | Turn ON programs above cursor |
-| `progam-above-off` | Turn OFF programs above cursor |
-| `progam-below-toggle` | Toggle programs below cursor |
-| `progam-below-on` | Turn ON programs below cursor |
-| `progam-below-off` | Turn OFF programs below cursor |
-| `clear-urs-tags` | Remove all URS tags from programs |
+- `sofistik-tools:current-help`: (`F6`) open help for current module in PDF viewer (reuses pane),
+- `sofistik-tools:separately-help`: (`Alt+F6`) open help for current module in new pane,
+- `sofistik-tools:calculation-wps`: (`F5`) open WPS with current file,
+- `sofistik-tools:calculation-wps-immediately`: (`Ctrl+F5`) run calculation in WPS,
+- `sofistik-tools:calculation-wps-current`: (`Shift+F5`) run calculation of current program only,
+- `sofistik-tools:calculation-sps-immediately`: (`Alt+F5`) run calculation in SPS,
+- `sofistik-tools:open-report`: (`F9`) open `.plb` file in Report Viewer,
+- `sofistik-tools:save-report-as-pdf`: export report to PDF,
+- `sofistik-tools:save-pictures-as-pdf`: export pictures from report to PDF,
+- `sofistik-tools:open-protocol`: open `.prt` protocol file in editor,
+- `sofistik-tools:open-animator`: (`F7`) open `.cdb` in Animator,
+- `sofistik-tools:open-animator-2018`: (`Alt+F7`) open `.cdb` in Animator 2018,
+- `sofistik-tools:open-viewer`: open `.cdb` in Viewer (2024+) or FEA Viewer (2020-2023),
+- `sofistik-tools:open-dbinfo`: open `.cdb` in Database Info,
+- `sofistik-tools:open-ssd`: open `.sofistik` file in SSD,
+- `sofistik-tools:open-wingraf`: (`F8`) open `.gra` file in WinGRAF,
+- `sofistik-tools:open-result-viewer`: (`Ctrl+F8`) open `.results` file in Result Viewer,
+- `sofistik-tools:open-teddy`: open file in Teddy,
+- `sofistik-tools:open-teddy-single`: open file in Teddy (single instance),
+- `sofistik-tools:open-teddy-1`: open file in Teddy slot 1,
+- `sofistik-tools:open-teddy-2`: open file in Teddy slot 2,
+- `sofistik-tools:open-teddy-3`: open file in Teddy slot 3,
+- `sofistik-tools:open-teddy-4`: open file in Teddy slot 4,
+- `sofistik-tools:open-sofiplus`: open `.dwg` file in SOFiPLUS,
+- `sofistik-tools:export-cdb`: open CDB export dialog,
+- `sofistik-tools:export-plb-to-docx`: convert `.plb` to `.docx` (2020+),
+- `sofistik-tools:program-current-toggle`: toggle current program on/off,
+- `sofistik-tools:program-all-toggle`: toggle all programs,
+- `sofistik-tools:program-all-on`: turn ON all programs,
+- `sofistik-tools:program-all-off`: turn OFF all programs,
+- `sofistik-tools:program-above-toggle`: toggle programs above cursor,
+- `sofistik-tools:program-above-on`: turn ON programs above cursor,
+- `sofistik-tools:program-above-off`: turn OFF programs above cursor,
+- `sofistik-tools:program-below-toggle`: toggle programs below cursor,
+- `sofistik-tools:program-below-on`: turn ON programs below cursor,
+- `sofistik-tools:program-below-off`: turn OFF programs below cursor,
+- `sofistik-tools:clear-urs-tags`: remove all URS tags from programs,
 
-## Commands in `atom-workspace` scope
+Commands available in `atom-workspace` scope:
 
-| Command | Description |
-|-|-|
-| `ifc-export` | Open IFC export dialog |
-| `ifc-import` | Open IFC import dialog |
-| `open-cdbase.chm` | Open database description (CDBASE.CHM) |
+- `sofistik-tools:toggle-help`: open help selection list,
+- `sofistik-tools:cache-help`: rebuild help cache,
+- `sofistik-tools:toggle-examples`: open examples selection list,
+- `sofistik-tools:cache-examples`: rebuild examples cache,
+- `sofistik-tools:change-version`: change SOFiSTiK version,
+- `sofistik-tools:ifc-export`: open IFC export dialog,
+- `sofistik-tools:ifc-import`: open IFC import dialog,
+- `sofistik-tools:open-cdbase.chm`: open database description (CDBASE.CHM),
 
-## Commands in `.tree-view` scope
+Commands available in `.tree-view` scope when right-clicking:
 
-Commands available when right-clicking in tree view:
+### File operations
 
-### File Operations
+- `sofistik-tools:open-animator`: open selected `.cdb` in Animator,
+- `sofistik-tools:open-animator-2018`: open selected `.cdb` in Animator 2018,
+- `sofistik-tools:open-report`: open selected `.plb` in Report Viewer,
+- `sofistik-tools:save-report-as-pdf`: export selected report to PDF,
+- `sofistik-tools:save-pictures-as-pdf`: export pictures from selected report,
+- `sofistik-tools:open-protocol`: open selected `.prt` file,
+- `sofistik-tools:open-viewer`: open selected `.cdb` in Viewer,
+- `sofistik-tools:open-viewer-2025`: open selected `.cdb` in Viewer 2025,
+- `sofistik-tools:open-dbinfo`: open selected `.cdb` in Database Info,
+- `sofistik-tools:open-ssd`: open selected `.sofistik` in SSD,
+- `sofistik-tools:open-wingraf`: open selected `.gra` in WinGRAF,
+- `sofistik-tools:open-result-viewer`: open selected `.results` in Result Viewer,
+- `sofistik-tools:open-teddy`: open selected file in Teddy,
+- `sofistik-tools:open-teddy-single`: open in Teddy (single instance),
+- `sofistik-tools:open-teddy-1` to `sofistik-tools:open-teddy-4`: open in Teddy slot 1-4,
+- `sofistik-tools:open-sofiplus`: open selected `.dwg` in SOFiPLUS,
+- `sofistik-tools:export-cdb`: open CDB export for selected file,
 
-| Command | Description |
-|-|-|
-| `open-animator` | Open selected `.cdb` in Animator |
-| `open-animator-2018` | Open selected `.cdb` in Animator 2018 |
-| `open-report` | Open selected `.plb` in Report Viewer |
-| `save-report-as-pdf` | Export selected report to PDF |
-| `save-pictures-as-pdf` | Export pictures from selected report |
-| `open-protocol` | Open selected `.prt` file |
-| `open-viewer` | Open selected `.cdb` in Viewer |
-| `open-viewer-2025` | Open selected `.cdb` in Viewer 2025 |
-| `open-dbinfo` | Open selected `.cdb` in Database Info |
-| `open-ssd` | Open selected `.sofistik` in SSD |
-| `open-wingraf` | Open selected `.gra` in WinGRAF |
-| `open-result-viewer` | Open selected `.results` in Result Viewer |
-| `open-teddy` | Open selected file in Teddy |
-| `open-teddy-single` | Open in Teddy (single instance) |
-| `open-teddy-1` to `open-teddy-4` | Open in Teddy slot 1-4 |
-| `open-sofiplus` | Open selected `.dwg` in SOFiPLUS |
-| `export-cdb` | Open CDB export for selected file |
-
-### Clean Commands
+### Clean commands
 
 Delete temporary and output files from selected folders:
 
-| Command | Files Deleted |
-|-|-|
-| `clean-1` | `.erg` `.prt` `.lst` `.urs` `.sdb` `.db-2` `.pl` `.$*` `.#*` `.grb` `.err` `.error_positions` `.dwl` `.dwl2` `.cfg` |
-| `clean-2` | Above + `.cdi` `.cde` |
-| `clean-3` | Above + `.cdb` `.sqlite` |
-| `clean-4` | Above + `.plb` `.bak` `_csm.dat` `_csmlf.dat` |
-| `clean-glob` | Custom glob pattern |
+- `sofistik-tools:clean-1`: `.erg` `.prt` `.lst` `.urs` `.sdb` `.db-2` `.pl` `.$*` `.#*` `.grb` `.err` `.error_positions` `.dwl` `.dwl2` `.cfg`,
+- `sofistik-tools:clean-2`: above + `.cdi` `.cde`,
+- `sofistik-tools:clean-3`: above + `.cdb` `.sqlite`,
+- `sofistik-tools:clean-4`: above + `.plb` `.bak` `_csm.dat` `_csmlf.dat`,
+- `sofistik-tools:clean-glob`: custom glob pattern,
 
-Add `-recursively` suffix to clean subdirectories (e.g., `clean-1-recursively`).
+Add `-recursively` suffix to clean subdirectories (e.g., `sofistik-tools:clean-1-recursively`).
 
-### WinGRAF Fix
+### WinGRAF fix
 
-| Command | Description |
-|-|-|
-| `wing-fix` | Fix MSCA issues in `.gra` files |
-| `wing-fix-recursively` | Fix MSCA issues recursively |
+- `sofistik-tools:wing-fix`: fix MSCA issues in `.gra` files,
+- `sofistik-tools:wing-fix-recursively`: fix MSCA issues recursively.
 
-# Contributing
+## Contributing
 
 Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback's welcome!
