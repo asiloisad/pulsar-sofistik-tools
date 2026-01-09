@@ -57,25 +57,25 @@ Use `@ child:filename.dat` directive to run multiple files in sequence. Use `@ o
 
 ## Commands
 
-Commands available in `source.sofistik` scope when editing `.dat` files:
+Commands available in `atom-text-editor[data-grammar="source sofistik"]`:
 
-- `sofistik-tools:current-help`: (`F6`) open help for current module in PDF viewer (reuses pane),
-- `sofistik-tools:separately-help`: (`Alt+F6`) open help for current module in new pane,
-- `sofistik-tools:calculation-wps`: (`F5`) open WPS with current file,
-- `sofistik-tools:calculation-wps-immediately`: (`Ctrl+F5`) run calculation in WPS,
-- `sofistik-tools:calculation-wps-current`: (`Shift+F5`) run calculation of current program only,
-- `sofistik-tools:calculation-sps-immediately`: (`Alt+F5`) run calculation in SPS,
-- `sofistik-tools:open-report`: (`F9`) open `.plb` file in Report Viewer,
+- `sofistik-tools:current-help`: open help for current module in PDF viewer (reuses pane),
+- `sofistik-tools:separately-help`: open help for current module in new pane,
+- `sofistik-tools:calculation-wps`: open WPS with current file,
+- `sofistik-tools:calculation-wps-immediately`: run calculation in WPS,
+- `sofistik-tools:calculation-wps-current`: run calculation of current program only,
+- `sofistik-tools:calculation-sps-immediately`: run calculation in SPS,
+- `sofistik-tools:open-report`: open `.plb` file in Report Viewer,
 - `sofistik-tools:save-report-as-pdf`: export report to PDF,
 - `sofistik-tools:save-pictures-as-pdf`: export pictures from report to PDF,
 - `sofistik-tools:open-protocol`: open `.prt` protocol file in editor,
-- `sofistik-tools:open-animator`: (`F7`) open `.cdb` in Animator,
-- `sofistik-tools:open-animator-2018`: (`Alt+F7`) open `.cdb` in Animator 2018,
+- `sofistik-tools:open-animator`: open `.cdb` in Animator,
+- `sofistik-tools:open-animator-2018`: open `.cdb` in Animator 2018,
 - `sofistik-tools:open-viewer`: open `.cdb` in Viewer (2024+) or FEA Viewer (2020-2023),
 - `sofistik-tools:open-dbinfo`: open `.cdb` in Database Info,
 - `sofistik-tools:open-ssd`: open `.sofistik` file in SSD,
-- `sofistik-tools:open-wingraf`: (`F8`) open `.gra` file in WinGRAF,
-- `sofistik-tools:open-result-viewer`: (`Ctrl+F8`) open `.results` file in Result Viewer,
+- `sofistik-tools:open-wingraf`: open `.gra` file in WinGRAF,
+- `sofistik-tools:open-result-viewer`: open `.results` file in Result Viewer,
 - `sofistik-tools:open-teddy`: open file in Teddy,
 - `sofistik-tools:open-teddy-single`: open file in Teddy (single instance),
 - `sofistik-tools:open-teddy-1`: open file in Teddy slot 1,
@@ -108,9 +108,7 @@ Commands available in `atom-workspace` scope:
 - `sofistik-tools:ifc-import`: open IFC import dialog,
 - `sofistik-tools:open-cdbase.chm`: open database description (CDBASE.CHM),
 
-Commands available in `.tree-view` scope when right-clicking:
-
-### File operations
+Commands available in `.tree-view` scope:
 
 - `sofistik-tools:open-animator`: open selected `.cdb` in Animator,
 - `sofistik-tools:open-animator-2018`: open selected `.cdb` in Animator 2018,
@@ -126,24 +124,14 @@ Commands available in `.tree-view` scope when right-clicking:
 - `sofistik-tools:open-result-viewer`: open selected `.results` in Result Viewer,
 - `sofistik-tools:open-teddy`: open selected file in Teddy,
 - `sofistik-tools:open-teddy-single`: open in Teddy (single instance),
-- `sofistik-tools:open-teddy-1` to `sofistik-tools:open-teddy-4`: open in Teddy slot 1-4,
+- `sofistik-tools:open-teddy-n`: open in Teddy slot n=1-4,
 - `sofistik-tools:open-sofiplus`: open selected `.dwg` in SOFiPLUS,
 - `sofistik-tools:export-cdb`: open CDB export for selected file,
-
-### Clean commands
-
-Delete temporary and output files from selected folders:
-
-- `sofistik-tools:clean-1`: `.erg` `.prt` `.lst` `.urs` `.sdb` `.db-2` `.pl` `.$*` `.#*` `.grb` `.err` `.error_positions` `.dwl` `.dwl2` `.cfg`,
+- `sofistik-tools:clean-1`: clean directory from files with extensions `.erg` `.prt` `.lst` `.urs` `.sdb` `.db-2` `.pl` `.$*` `.#*` `.grb` `.err` `.error_positions` `.dwl` `.dwl2` `.cfg`,
 - `sofistik-tools:clean-2`: above + `.cdi` `.cde`,
 - `sofistik-tools:clean-3`: above + `.cdb` `.sqlite`,
 - `sofistik-tools:clean-4`: above + `.plb` `.bak` `_csm.dat` `_csmlf.dat`,
-- `sofistik-tools:clean-glob`: custom glob pattern,
-
-Add `-recursively` suffix to clean subdirectories (e.g., `sofistik-tools:clean-1-recursively`).
-
-### WinGRAF fix
-
+- `sofistik-tools:clean-glob`: Use custom glob pattern,
 - `sofistik-tools:wing-fix`: fix MSCA issues in `.gra` files,
 - `sofistik-tools:wing-fix-recursively`: fix MSCA issues recursively.
 
