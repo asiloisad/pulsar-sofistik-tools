@@ -37,7 +37,7 @@
   "dependencies": {
     "glob": "^13.0.1",
     "minimatch": "^5.1.6",
-    "pulsar-select-list": "^1.2.0"
+    "pulsar-select-list": "^1.4.1"
   },
   "configSchema": {
     "envPath": {
