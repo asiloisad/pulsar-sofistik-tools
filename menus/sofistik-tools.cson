@@ -58,6 +58,7 @@
           { label: 'IFC Export', command: 'sofistik-tools:ifc-export' }
           { label: 'IFC Import', command: 'sofistik-tools:ifc-import' }
           { label: 'Open cdbase.chm', command: 'sofistik-tools:open-cdbase.chm' }
+          { label: 'Open sofistik_daten.py', command: 'sofistik-tools:open-sof-daten' }
         ]
       }
     ]
