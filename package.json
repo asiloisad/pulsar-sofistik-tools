@@ -37,7 +37,7 @@
   "dependencies": {
     "glob": "^13.0.1",
     "minimatch": "^5.1.6",
-    "@asiloisad/select-list": "^1.5.0"
+    "@asiloisad/select-list": "^1.6.0"
   },
   "configSchema": {
     "envPath": {
