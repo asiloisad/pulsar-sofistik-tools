@@ -6,7 +6,7 @@
     "sofistik",
     "tools"
   ],
-  "version": "1.4.15",
+  "version": "1.4.16",
   "license": "MIT",
   "engines": {
     "atom": ">=1.100.0 <2.0.0"
