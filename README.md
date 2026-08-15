@@ -13,7 +13,7 @@ Commands and integrations for SOFiSTiK structural analysis workflow.
 
 ## Installation
 
-To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`. Alternatively, you can run `ppm install asiloisad/pulsar-sofistik-tools` to install a package directly from the GitHub repository.
+To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`. Alternatively, you can run `ppm install asiloisad-pulsar/sofistik-tools` to install a package directly from the GitHub repository.
 
 This package requires [language-sofistik](https://github.com/asiloisad-pulsar/language-sofistik).
 
