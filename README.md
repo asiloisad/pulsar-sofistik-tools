@@ -4,7 +4,7 @@ Commands and integrations for SOFiSTiK structural analysis workflow.
 
 ## Features
 
-- **Help system**: Open PDF manuals in [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer).
+- **Help system**: Open PDF manuals in [pdf-viewer](https://github.com/asiloisad-pulsar/pdf-viewer).
 - **Calculation**: Run WPS/SPS directly from the editor.
 - **File handlers**: Open CDB, PLB, GRA files with double-click.
 - **Program control**: Toggle programs on/off in `.dat` files.
@@ -15,7 +15,7 @@ Commands and integrations for SOFiSTiK structural analysis workflow.
 
 To install `sofistik-tools` search for [sofistik-tools](https://web.pulsar-edit.dev/packages/sofistik-tools) in the Install pane of the Pulsar settings or run `ppm install sofistik-tools`. Alternatively, you can run `ppm install asiloisad/pulsar-sofistik-tools` to install a package directly from the GitHub repository.
 
-This package requires [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik).
+This package requires [language-sofistik](https://github.com/asiloisad-pulsar/language-sofistik).
 
 ## Commands
 
@@ -103,11 +103,11 @@ The package determines which SOFiSTiK version to use in the following priority o
 
 1. **Shebang in file**: `@ SOFiSTiK 2026` or `@ SOFiSTiK 2024-05` comment in the file (searched backwards from cursor)
 2. **Project configuration**: `sofistik.def` file in the same directory with `SOF_VERSION = 2026`
-3. **Package setting**: Version configured in [language-sofistik](https://github.com/asiloisad/pulsar-language-sofistik) settings
+3. **Package setting**: Version configured in [language-sofistik](https://github.com/asiloisad-pulsar/language-sofistik) settings
 
 ## Help system
 
-The help view opens PDF manuals directly in Pulsar using [pdf-viewer](https://github.com/asiloisad/pulsar-pdf-viewer). When cursor is on a command, it jumps to that command's documentation.
+The help view opens PDF manuals directly in Pulsar using [pdf-viewer](https://github.com/asiloisad-pulsar/pdf-viewer). When cursor is on a command, it jumps to that command's documentation.
 
 ## File handlers
 
